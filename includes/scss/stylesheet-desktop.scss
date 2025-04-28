@@ -1,0 +1,125 @@
+$primary-color: #8FC936;
+$secondary-color: #3585ED;
+$font-size-1: 30px;
+$font-size-2: 20px;
+$font-size-3: 15px;
+
+
+@media (min-width: 769px) {
+body{
+  background-color: #FEFAF9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-first-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+.huidig-abonnement{
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: #ffff;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+
+.aantal-credits{
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: #ffff;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+
+.ranking{
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: #ffff;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+
+.button-lang{
+    background-color: $primary-color;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $font-size-3;
+    color: #fff;
+    margin: 15px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.blok-naam{
+    font-size: $font-size-2;
+    color: #000;
+    padding-left: 20px;
+}
+
+
+.blok-inhoud{
+    font-size: $font-size-1;
+    color: #000;
+    padding-left: 20px;
+}
+
+
+.container-second-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+.nieuwe-reviews{
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: #ffff;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+
+.containers-underneath{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.review-statistieken{
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: #ffff;
+    border: black 1px solid;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+
+.bezoekers-statistieken{
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: #ffff;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+}

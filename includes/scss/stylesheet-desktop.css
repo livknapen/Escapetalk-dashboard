@@ -1,0 +1,95 @@
+@media (min-width: 769px) {
+  body {
+    background-color: #FEFAF9;
+    font-family: "Montserrat", sans-serif;
+  }
+  .container-first-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .huidig-abonnement {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+  }
+  .aantal-credits {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+  }
+  .ranking {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+  }
+  .button-lang {
+    background-color: #8FC936;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    margin: 15px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .blok-naam {
+    font-size: 20px;
+    color: #000;
+    padding-left: 20px;
+  }
+  .blok-inhoud {
+    font-size: 30px;
+    color: #000;
+    padding-left: 20px;
+  }
+  .container-second-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .nieuwe-reviews {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+  }
+  .containers-underneath {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .review-statistieken {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+    margin-bottom: 50px;
+  }
+  .bezoekers-statistieken {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+  }
+}/*# sourceMappingURL=stylesheet-desktop.css.map */

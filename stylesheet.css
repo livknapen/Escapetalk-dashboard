@@ -1,0 +1,36 @@
+body {
+  background-color: #FEFAF9;
+}
+
+.container-first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.huidig-abonnement {
+  display: flex;
+  justify-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: black 1px solid;
+}
+
+.aantal-credits {
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+  flex-direction: column;
+  background-color: white;
+  border: black 1px solid;
+}
+
+.ranking {
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+  flex-direction: column;
+  background-color: white;
+  border: black 1px solid;
+}/*# sourceMappingURL=stylesheet.css.map */

@@ -1,0 +1,165 @@
+@media (max-width: 768px) {
+  body {
+    background-color: #FEFAF9;
+    font-family: "Montserrat", sans-serif;
+  }
+  .sidebar {
+    display: none;
+  }
+  .content-start {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .blok-start {
+    font-size: 27px;
+    color: #000;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .container-first-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .huidig-abonnement {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 90%;
+    margin-bottom: 42px;
+  }
+  .image-wrapper-pim {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -132px;
+  }
+  .aantal-credits {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 90%;
+    margin-bottom: 42px;
+  }
+  .ranking {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 90%;
+    margin-bottom: 42px;
+  }
+  .button-lang {
+    background-color: #8FC936;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    margin: 15px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 600;
+    max-width: 62%;
+  }
+  .blok-naam {
+    font-size: 17px;
+    color: #000;
+    padding-left: 20px;
+    margin-bottom: -5px;
+    margin-right: 10px;
+  }
+  .blok-inhoud {
+    font-size: 27px;
+    color: #000;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  .blok-extra {
+    font-size: 15px;
+    color: #000;
+    padding-left: 20px;
+    margin-top: 16px;
+    font-weight: 200;
+  }
+  .container-second-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .nieuwe-reviews {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 90%;
+    margin-bottom: 42px;
+  }
+  .containers-underneath {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .review-statistieken {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 90%;
+    margin-bottom: 42px;
+  }
+  .bezoekers-statistieken {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 90%;
+    margin-bottom: 42px;
+  }
+  .container-third-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .containers-underneath-small {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-left: 23px;
+  }
+  .kleine-statistieken {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 43%;
+    word-wrap: break-word;
+  }
+  .footer {
+    text-align: center;
+  }
+}/*# sourceMappingURL=stylesheet-mobile.css.map */
