@@ -3,6 +3,9 @@ $secondary-color: #3585ED;
 $font-size-1: 27px;
 $font-size-2: 17px;
 $font-size-3: 15px;
+strong {
+    font-weight: 500;
+}
 
 
 @media (max-width: 768px) {
@@ -100,6 +103,31 @@ body{
 }
 
 
+.filter-button {
+    background-color: $primary-color;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $font-size-3;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+
+  
+    &.inactive {
+      background-color: white;
+      color: #000;
+    }
+  }
+
+
 .blok-naam{
     font-size: $font-size-2;
     color: #000;
@@ -123,6 +151,16 @@ body{
     padding-left: 20px;
     margin-top: 16px;
     font-weight: 200;
+}
+
+
+.blok-extra-onder{
+    font-size: $font-size-3;
+    color: #000;
+    padding-left: 20px;
+    margin-top: 8px;
+    font-weight: 200;
+    margin-bottom: 28px;
 }
 
 
@@ -176,6 +214,14 @@ body{
     border-radius: 5px;
     min-width: 90%;
     margin-bottom: 42px;
+}
+
+
+.statistieken-inhoud{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 14px;
+    margin-top: 20px;
 }
 
 

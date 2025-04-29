@@ -59,19 +59,41 @@
                     <div class="containers-underneath">
                         <div class="review-statistieken">
                             <h2 class="blok-naam">Review statistieken</h2>
+                            <div class="statistieken-inhoud">
+                                <h2 class="blok-extra">Gem. review score <br> <strong>7.5</strong></h2>
+                                <h2 class="blok-extra">Vergelijking met andere <br> <strong>Boven gemiddelde</strong></h2>
+                            </div>
+                            <div class="filter-buttons" id="review-filter">
+                                <button class="filter-button">Week</button>
+                                <button class="filter-button inactive">Maand</button>
+                            </div>
                             <section class="charts">
                                 <div class="card">
-                                  <canvas id="reviewChart"></canvas>
+                                  <canvas id="reviewChart" width="338"></canvas>
                                 </div>
                               </section>
+                              <div class="statistieken-inhoud">
+                                <h2 class="blok-extra-onder">Totaal aantal reviews: <strong id="review-total">150</strong></h2>
+                            </div>
                         </div>
                         <div class="bezoekers-statistieken">
                             <h2 class="blok-naam">Bezoekersstatistieken</h2>
+                            <div class="statistieken-inhoud">
+                                <h2 class="blok-extra">Aantal views <br> <strong>152</strong></h2>
+                                <h2 class="blok-extra">Vergelijking met andere <br> <strong>Boven gemiddelde</strong></h2>
+                            </div>
+                            <div class="filter-buttons" id="visitor-filter">
+                                <button class="filter-button">Week</button>
+                                <button class="filter-button inactive">Maand</button>
+                            </div>
                             <section class="charts">
                                 <div class="card">
-                                  <canvas id="visitorChart"></canvas>
+                                  <canvas id="visitorChart" width="338"></canvas>
                                 </div>
                               </section>
+                              <div class="statistieken-inhoud">
+                                <h2 class="blok-extra-onder">Conversieratio: <strong id="visitor-total">10%</strong></h2>
+                            </div>
                         </div>
                     </div>
                 </div>
