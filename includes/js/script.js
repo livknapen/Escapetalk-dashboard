@@ -51,6 +51,7 @@ window.onload = function() {
             backgroundColor: '#B8B8B8',
             borderColor: '#B8B8B8',
             pointRadius: 0,
+            borderWidth: 2,
             fill: false,
             order: 2
           }
@@ -102,6 +103,7 @@ window.onload = function() {
             data: visitorWeekDataJij,
             borderColor: '#3585ED',
             pointRadius: 0,
+            borderWidth: 3,
             fill: false
           },
           {
@@ -109,6 +111,7 @@ window.onload = function() {
             data: visitorWeekDataGemiddeld,
             borderColor: '#B8B8B8',
             pointRadius: 0,
+            borderWidth: 3,
             fill: false
           }
         ]
@@ -138,10 +141,7 @@ window.onload = function() {
             position: 'bottom',
             labels: {
               usePointStyle: true,
-              pointStyle: function(ctx) {
-                const dataset = ctx.dataset || {};
-                return dataset.type === 'line' ? 'line' : 'rect';
-              }
+              pointStyle: 'line'
             }
           }
         }
@@ -167,8 +167,8 @@ window.onload = function() {
             reviewChart.data.datasets[0].data = isWeek ? reviewWeekDataJij : reviewMonthDataJij;
             reviewChart.data.datasets[1].data = isWeek ? reviewWeekDataGemiddeld : reviewMonthDataGemiddeld;
             reviewChart.update();
-
-            document.getElementById('review-total').innerText = isWeek ? weekTotalReviews : monthTotalReviews;
+          
+            document.getElementById('review-total').innerText = isWeek ? weekTotalReviews : monthTotalReviews;          
           }
   
           if (parent === 'visitor-filter') {
@@ -178,8 +178,11 @@ window.onload = function() {
             visitorChart.update();
 
             document.getElementById('visitor-total').innerText = (isWeek ? weekVisitorConversion : monthVisitorConversion) + '%';
+            
           }
         });
+        document.getElementById('review-total').innerText = weekTotalReviews;
+        document.getElementById('visitor-total').innerText = weekVisitorConversion + '%';
       });
     });
   
