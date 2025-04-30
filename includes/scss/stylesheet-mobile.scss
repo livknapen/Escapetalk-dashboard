@@ -3,263 +3,348 @@ $secondary-color: #3585ED;
 $font-size-1: 27px;
 $font-size-2: 17px;
 $font-size-3: 15px;
+$font-size-4: 12px;
+
 strong {
     font-weight: 500;
 }
 
 
 @media (max-width: 768px) {
-body{
-  background-color: #FEFAF9;
-  font-family: 'Montserrat', sans-serif;
-}
-
-
-.sidebar{
-    display: none;
-}
-
-
-.content-start{
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-
-.blok-start{
-    font-size: $font-size-1;
-    color: #000;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-
-.container-first-row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.huidig-abonnement{
-    display: flex;
-    justify-items: flex-start;
-    flex-direction: column;
-    background-color: #ffff;
-    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    min-width: 90%;
-    margin-bottom: 42px;
-}
-
-
-.image-wrapper-pim{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: -132px;
-}
-
-
-.aantal-credits{
-    display: flex;
-    justify-items: flex-start;
-    flex-direction: column;
-    background-color: #ffff;
-    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    min-width: 90%;
-    margin-bottom: 42px;
-}
-
-
-.ranking{
-    display: flex;
-    justify-items: flex-start;
-    flex-direction: column;
-    background-color: #ffff;
-    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    min-width: 90%;
-    margin-bottom: 42px;
-}
-
-
-.button-lang{
-    background-color: $primary-color;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: $font-size-3;
-    color: #fff;
-    margin: 15px 20px;
-    cursor: pointer;
-    border-radius: 3px;
-    font-weight: 600;
-    max-width: 62%;
-}
-
-
-.filter-button {
-    background-color: $primary-color;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: $font-size-3;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 3px;
-    font-weight: 400;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
-
-  
-    &.inactive {
-      background-color: white;
-      color: #000;
+    body {
+        background-color: #FEFAF9;
+        font-family: 'Montserrat', sans-serif;
     }
-  }
 
 
-.blok-naam{
-    font-size: $font-size-2;
-    color: #000;
-    padding-left: 20px;
-    margin-bottom: -5px;
-    margin-right: 10px;
-}
+    .sidebar {
+        display: none;
+    }
 
 
-.blok-inhoud{
-    font-size: $font-size-1;
-    color: #000;
-    padding-left: 20px;
-    margin-bottom: 5px;
-    font-weight: 500;
-}
-
-.blok-extra{
-    font-size: $font-size-3;
-    color: #000;
-    padding-left: 20px;
-    margin-top: 16px;
-    font-weight: 200;
-}
+    .content-start {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
 
 
-.blok-extra-onder{
-    font-size: $font-size-3;
-    color: #000;
-    padding-left: 20px;
-    margin-top: 8px;
-    font-weight: 200;
-    margin-bottom: 28px;
-}
+    .blok-start {
+        font-size: $font-size-1;
+        color: #000;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
 
 
-.container-second-row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
+    .container-first-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
 
 
-.nieuwe-reviews{
-    display: flex;
-    justify-items: flex-start;
-    flex-direction: column;
-    background-color: #ffff;
-    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    min-width: 90%;
-    margin-bottom: 42px;
-}
+    .huidig-abonnement {
+        display: flex;
+        justify-items: flex-start;
+        flex-direction: column;
+        background-color: #ffff;
+        box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        min-width: 90%;
+        margin-bottom: 42px;
+    }
 
 
-.containers-underneath{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    min-width: 100%;
-}
+    .image-wrapper-pim {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: -132px;
+    }
 
 
-.review-statistieken{
-    display: flex;
-    justify-items: flex-start;
-    flex-direction: column;
-    background-color: #ffff;
-    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    min-width: 90%;
-    margin-bottom: 42px;
-}
+    .aantal-credits {
+        display: flex;
+        justify-items: flex-start;
+        flex-direction: column;
+        background-color: #ffff;
+        box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        min-width: 90%;
+        margin-bottom: 42px;
+    }
 
 
-.bezoekers-statistieken{
-    display: flex;
-    justify-items: flex-start;
-    flex-direction: column;
-    background-color: #ffff;
-    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    min-width: 90%;
-    margin-bottom: 42px;
-}
+    .ranking {
+        display: flex;
+        justify-items: flex-start;
+        flex-direction: column;
+        background-color: #ffff;
+        box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        min-width: 90%;
+        margin-bottom: 42px;
+    }
 
 
-.statistieken-inhoud{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 14px;
-    margin-top: 20px;
-}
+    %button-base {
+        background-color: $primary-color;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: $font-size-3;
+        color: #ffff;
+        cursor: pointer;
+        border-radius: 3px;
+        font-weight: 600;
+        margin: 15px 20px;
+    }
+
+    .button-lang {
+        @extend %button-base;
+        max-width: 63%;
+    }
+
+    .button-lang-ad {
+        @extend %button-base;
+        margin-top: -5px;
+    }
+
+    .button-reageren {
+        @extend %button-base;
+        margin: 15px 0px;
+        margin-top: 0px;
+        max-width: 35%;
+    }
+
+    .button-lang-alle-reviews {
+        @extend %button-base;
+    }
 
 
-.container-third-row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
+    .filter-button {
+        background-color: $primary-color;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: $font-size-3;
+        color: #ffff;
+        cursor: pointer;
+        border-radius: 3px;
+        font-weight: 400;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
 
 
-.containers-underneath-small{
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 34px;
-    margin-left: 5vw;
-}
+        &.inactive {
+            background-color: white;
+            color: #000;
+        }
+    }
 
 
-.kleine-statistieken{
-    display: flex;
-    justify-items: flex-start;
-    flex-direction: column;
-    background-color: #ffff;
-    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    width: 43%;
-    word-wrap: break-word;
-}
+    %blok-stijl {
+        color: #000;
+        padding-left: 20px;
+    }
+
+    .blok-naam {
+        @extend %blok-stijl;
+        font-size: $font-size-2;
+        margin-bottom: -5px;
+        margin-right: 10px;
+    }
+
+    .blok-inhoud {
+        @extend %blok-stijl;
+        font-size: $font-size-1;
+        margin-bottom: 5px;
+        font-weight: 500;
+    }
+
+    .blok-extra {
+        @extend %blok-stijl;
+        font-size: $font-size-3;
+        margin-top: 16px;
+        font-weight: 200;
+    }
+
+    .blok-review-datum {
+        @extend %blok-stijl;
+        font-size: $font-size-4;
+        font-weight: 200;
+        margin-right: 10px;
+    }
 
 
-.footer{
-    text-align: center;
-}
+    .blok-extra-onder {
+        font-size: $font-size-3;
+        color: #000;
+        padding-left: 20px;
+        margin-top: 8px;
+        font-weight: 200;
+        margin-bottom: 28px;
+    }
+
+    %blok-basis {
+        color: #000;
+    }
+
+    .blok-username {
+        @extend %blok-basis;
+        font-size: $font-size-4;
+        font-weight: 200;
+        margin-top: 16px;
+        margin-right: 0;
+    }
+
+    .blok-score {
+        @extend %blok-basis;
+        font-size: $font-size-2;
+        font-weight: 500;
+        margin-top: 16px;
+        margin-left: 17px;
+    }
+
+    .blok-review-kop {
+        @extend %blok-basis;
+        font-size: $font-size-2;
+        font-weight: 500;
+        margin-top: 16px;
+    }
+
+    .blok-review-tekst {
+        @extend %blok-basis;
+        font-size: $font-size-3;
+        font-weight: 300;
+        margin-top: -6px;
+    }
+
+    .blok-button-reageren {
+        @extend %blok-basis;
+        display: flex;
+        justify-content: flex-end;
+    }
 
 
-.card{
-    display: flex;
-    justify-content: center;
-}
+    .container-second-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    %statistiek-blok {
+        display: flex;
+        justify-items: flex-start;
+        flex-direction: column;
+        background-color: #ffff;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-bottom: 42px;
+    }
+
+    .nieuwe-reviews {
+        @extend %statistiek-blok;
+        max-width: 90%;
+    }
+
+    .review-statistieken,
+    .bezoekers-statistieken,
+    .advertentie-statistieken {
+        @extend %statistiek-blok;
+        min-width: 90%;
+    }
+
+
+    .reviews-blok {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-right: 14px;
+        padding-left: 20px;
+    }
+
+
+    .reviews-blok-top {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-right: 14px;
+        margin-top: 20px;
+    }
+
+
+    .reviews-inhoud {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-right: 6px;
+    }
+
+
+    .containers-underneath {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        min-width: 100%;
+    }
+
+
+    .statistieken-inhoud {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 14px;
+        margin-top: 20px;
+    }
+
+
+    .container-third-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .containers-underneath-small {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 34px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        justify-content: space-between;
+    }
+
+
+    .kleine-statistieken {
+        display: flex;
+        justify-items: flex-start;
+        flex-direction: column;
+        background-color: #ffff;
+        box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        width: 45%;
+        word-wrap: break-word;
+    }
+
+
+    .footer {
+        text-align: center;
+    }
+
+
+    .card {
+        display: flex;
+        justify-content: center;
+    }
 }
