@@ -11,6 +11,10 @@ window.onload = function() {
     const reviewMonthDataJij = [110, 140, 135, 160];
     const reviewMonthDataGemiddeld = [100, 120, 115, 140];
 
+    // Review score
+    const weekReviewScore = 7.5;
+    const monthReviewScore = 8.2;
+
     // Totale reviews
     const weekTotalReviews = 150;
     const monthTotalReviews = 600;
@@ -24,9 +28,27 @@ window.onload = function() {
     const visitorMonthDataJij = [120, 130, 125, 140];
     const visitorMonthDataGemiddeld = [110, 120, 115, 125];
 
+    // Aantal views
+    const weekAantalViews = 152;
+    const monthAantalViews = 515;
+
     // Converieratio
     const weekVisitorConversion = 10;    
     const monthVisitorConversion = 43;   
+
+    // Data voor aantal kliks
+    const adWeekLabels = ['Ad1', 'Ad2'];
+    const adUitleg = {
+        Ad1: 'dezeadvertentieisvoordezomer',
+        Ad2: 'dezeadvertentieisvoordewinter'
+      };
+    const adAantalKliks = [76, 103];
+  
+    // Aantal views
+    const adAantalViews = 189;
+
+    // Click Through Rate
+    const adClickThroughRate = 20;
   
     // reviewChart
     const reviewChart = new Chart(reviewCtx, {
@@ -168,7 +190,8 @@ window.onload = function() {
             reviewChart.data.datasets[1].data = isWeek ? reviewWeekDataGemiddeld : reviewMonthDataGemiddeld;
             reviewChart.update();
           
-            document.getElementById('review-total').innerText = isWeek ? weekTotalReviews : monthTotalReviews;          
+            document.getElementById('review-total').innerText = isWeek ? weekTotalReviews : monthTotalReviews;
+            document.getElementById('review-score').innerText = isWeek ? weekReviewScore : monthReviewScore;            
           }
   
           if (parent === 'visitor-filter') {
@@ -177,12 +200,16 @@ window.onload = function() {
             visitorChart.data.datasets[1].data = isWeek ? visitorWeekDataGemiddeld : visitorMonthDataGemiddeld;
             visitorChart.update();
 
+            document.getElementById('aantal-views').innerText = isWeek ? weekAantalViews : monthAantalViews;
             document.getElementById('visitor-total').innerText = (isWeek ? weekVisitorConversion : monthVisitorConversion) + '%';
             
           }
         });
         document.getElementById('review-total').innerText = weekTotalReviews;
+        document.getElementById('review-score').innerText = weekReviewScore;
         document.getElementById('visitor-total').innerText = weekVisitorConversion + '%';
+        document.getElementById('aantal-views').innerText = weekAantalViews;
+        document.getElementById('aantal-ctr').innerText = adClickThroughRate + '%';
       });
     });
   
@@ -192,17 +219,63 @@ window.onload = function() {
     new Chart(adCtx, {
       type: 'bar',
       data: {
-        labels: ['Ad 1', 'Ad 2'],
-        datasets: [{
-          label: 'Aantal klikken',
-          data: [120, 80],
-          backgroundColor: '#4477C2'
-        }]
+        labels: adWeekLabels,
+        datasets: [
+            {
+                type: 'bar',
+                label: 'Jij',
+                data: reviewWeekDataJij,
+                backgroundColor: ['#3585ED', '#58C7FF'],
+                barThickness: 30,
+                borderRadius: 20,
+                borderSkipped: false,
+              }
+        ]
       },
       options: {
-        indexAxis: 'y'
-      }
+        indexAxis: 'y',
+            responsive: false,
+            maintainAspectRatio: false,
+            scales: {
+              x: {
+                grid: { display: false },
+                border: { color: '#000000' },
+                title: {
+                    display: true,
+                    text: 'Aantal views',
+                    color: '#666',
+                    font: { size: 12, weight: '300' }
+                  },
+              },
+              y: {
+                grid: { display: false },
+                border: { color: '#000000' },
+              },
+            },
+            plugins: {
+                legend: {
+                  display: true,
+                  position: 'bottom',
+                  labels: {
+                    generateLabels: function(chart) {
+                      return chart.data.labels.map((label, index) => {
+                        return {
+                          text: adUitleg[label] || label,
+                          fillStyle: chart.data.datasets[0].backgroundColor[index] || '#3585ED',
+                          strokeStyle: chart.data.datasets[0].backgroundColor[index] || '#3585ED',
+                          lineWidth: 0,
+                          hidden: false,
+                          index: index,
+                        };
+                      });
+                    }
+                  }
+                }
+              }
+          }
     });
+
+    
   };
 
   
