@@ -1,11 +1,81 @@
+strong {
+  font-weight: 500;
+}
+
 @media (min-width: 769px) {
   body {
     background-color: #FEFAF9;
     font-family: "Montserrat", sans-serif;
   }
+  .content {
+    padding: 0 120px 0 300px;
+  }
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    padding-top: 130px;
+  }
+  .sidebar:hover {
+    width: 350px;
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 16px;
+  }
+  .sidebar ul li a svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    fill: #000;
+    margin-right: 16px;
+    min-width: 60px;
+    text-align: center;
+  }
+  .sidebar ul li a .label {
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    cursor: pointer;
+  }
+  .sidebar ul li a.active {
+    font-weight: bold;
+  }
+  .sidebar:hover .label {
+    opacity: 1;
+    visibility: visible;
+  }
+  .content-start {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .blok-start {
+    font-size: 27px;
+    color: #000;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
   .container-first-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
   }
@@ -14,26 +84,37 @@
     justify-items: flex-start;
     flex-direction: column;
     background-color: white;
-    border: black 1px solid;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    margin-bottom: 42px;
+    min-width: 30%;
+  }
+  .image-wrapper-pim {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -132px;
   }
   .aantal-credits {
     display: flex;
     justify-items: flex-start;
     flex-direction: column;
     background-color: white;
-    border: black 1px solid;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    margin-bottom: 42px;
+    min-width: 30%;
   }
   .ranking {
     display: flex;
     justify-items: flex-start;
     flex-direction: column;
     background-color: white;
-    border: black 1px solid;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    margin-bottom: 42px;
+    min-width: 15%;
   }
-  .button-lang {
+  .button-lang-alle-reviews, .button-reageren, .button-lang-ad, .button-lang {
     background-color: #8FC936;
     border: none;
     padding: 10px 20px;
@@ -41,33 +122,162 @@
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
-    color: #fff;
-    margin: 15px 20px;
+    color: white;
     cursor: pointer;
     border-radius: 3px;
+    font-weight: 600;
+    margin: 15px 20px;
+  }
+  .button-lang {
+    max-width: 63%;
+  }
+  .button-lang-ad {
+    margin-top: -5px;
+  }
+  .button-reageren {
+    margin: 15px 0px;
+    margin-top: 0px;
+    max-width: 35%;
+  }
+  .filter-button {
+    background-color: #8FC936;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  }
+  .filter-button.inactive {
+    background-color: white;
+    color: #000;
+  }
+  .blok-review-datum, .blok-extra-ad, .blok-extra-ranking, .blok-extra, .blok-inhoud, .blok-naam {
+    color: #000;
+    padding-left: 20px;
   }
   .blok-naam {
-    font-size: 20px;
-    color: #000;
-    padding-left: 20px;
+    font-size: 17px;
+    margin-bottom: -5px;
+    margin-right: 10px;
   }
   .blok-inhoud {
-    font-size: 30px;
+    font-size: 27px;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  .blok-extra {
+    font-size: 15px;
+    margin-top: 16px;
+    font-weight: 200;
+  }
+  .blok-extra-ranking {
+    font-size: 15px;
+    margin-top: 23px;
+    font-weight: 200;
+    margin-bottom: 24px;
+  }
+  .blok-extra-ad {
+    font-size: 15px;
+    margin-top: 16px;
+    font-weight: 200;
+    padding-right: 88px;
+  }
+  .blok-review-datum {
+    font-size: 12px;
+    font-weight: 200;
+    margin-right: 10px;
+  }
+  .blok-extra-onder {
+    font-size: 15px;
     color: #000;
     padding-left: 20px;
+    margin-top: 8px;
+    font-weight: 200;
+    margin-bottom: 28px;
+  }
+  .blok-button-reageren, .blok-review-tekst, .blok-review-kop, .blok-score, .blok-username {
+    color: #000;
+  }
+  .blok-username {
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: 16px;
+    margin-right: 0;
+  }
+  .blok-score {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-left: 17px;
+  }
+  .blok-review-kop {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 16px;
+  }
+  .blok-review-tekst {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: -6px;
+  }
+  .blok-button-reageren {
+    display: flex;
+    justify-content: flex-end;
   }
   .container-second-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
   }
-  .nieuwe-reviews {
+  .advertentie-statistieken, .review-statistieken,
+  .bezoekers-statistieken, .nieuwe-reviews {
     display: flex;
     justify-items: flex-start;
     flex-direction: column;
     background-color: white;
-    border: black 1px solid;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    margin-bottom: 42px;
+  }
+  .nieuwe-reviews {
+    max-width: 40%;
+  }
+  .review-statistieken,
+  .bezoekers-statistieken {
+    min-width: 100%;
+  }
+  .advertentie-statistieken {
+    margin-bottom: 0;
+    min-width: 40%;
+  }
+  .reviews-blok {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 14px;
+    padding-left: 20px;
+  }
+  .reviews-blok-top {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 14px;
+    margin-top: 20px;
+  }
+  .reviews-inhoud {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-right: 6px;
   }
   .containers-underneath {
     display: flex;
@@ -75,21 +285,40 @@
     align-items: center;
     flex-direction: column;
   }
-  .review-statistieken {
+  .statistieken-inhoud {
     display: flex;
-    justify-items: flex-start;
-    flex-direction: column;
-    background-color: white;
-    border: black 1px solid;
-    border-radius: 5px;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    margin-right: 14px;
+    margin-top: 20px;
   }
-  .bezoekers-statistieken {
+  .container-third-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .containers-underneath-small {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    justify-content: space-between;
+  }
+  .kleine-statistieken {
     display: flex;
     justify-items: flex-start;
     flex-direction: column;
     background-color: white;
-    border: black 1px solid;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    width: 45%;
+    word-wrap: break-word;
+  }
+  .footer {
+    text-align: center;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=stylesheet-desktop.css.map */

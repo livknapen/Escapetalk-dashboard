@@ -176,6 +176,24 @@ strong {
         font-weight: 200;
     }
 
+
+    .blok-extra-ranking {
+        @extend %blok-stijl;
+        font-size: $font-size-3;
+        margin-top: 16px;
+        font-weight: 200;
+    }
+
+
+    .blok-extra-ad {
+        @extend %blok-stijl;
+        font-size: $font-size-3;
+        margin-top: 16px;
+        font-weight: 200;
+        padding-right: 88px;
+    }
+
+
     .blok-review-datum {
         @extend %blok-stijl;
         font-size: $font-size-4;

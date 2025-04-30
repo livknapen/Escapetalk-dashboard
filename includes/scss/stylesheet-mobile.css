@@ -108,7 +108,7 @@ strong {
     background-color: white;
     color: #000;
   }
-  .blok-review-datum, .blok-extra, .blok-inhoud, .blok-naam {
+  .blok-review-datum, .blok-extra-ad, .blok-extra-ranking, .blok-extra, .blok-inhoud, .blok-naam {
     color: #000;
     padding-left: 20px;
   }
@@ -126,6 +126,17 @@ strong {
     font-size: 15px;
     margin-top: 16px;
     font-weight: 200;
+  }
+  .blok-extra-ranking {
+    font-size: 15px;
+    margin-top: 16px;
+    font-weight: 200;
+  }
+  .blok-extra-ad {
+    font-size: 15px;
+    margin-top: 16px;
+    font-weight: 200;
+    padding-right: 88px;
   }
   .blok-review-datum {
     font-size: 12px;

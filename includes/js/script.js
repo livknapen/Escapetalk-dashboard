@@ -293,3 +293,18 @@ window.onload = function () {
     },
   });
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll('.sidebar a');
+    const currentUrl = window.location.pathname;
+
+    links.forEach(link => {
+      const linkPath = new URL(link.href).pathname;
+
+      if (linkPath === currentUrl) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  });
