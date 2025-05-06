@@ -367,14 +367,27 @@ strong {
     }
 
 
-    .card {
+    %card-shared {
         display: flex;
         justify-content: center;
         height: 53vw;
         width: 80vw;
         margin: 0 auto;
         position: relative;
-    }
+      
+        canvas {
+          width: 100% !important;
+          height: 100% !important;
+        }
+      }
+      
+      .card {
+        @extend %card-shared;
+      }
+      
+      .card-ad {
+        @extend %card-shared;
+      }      
 
 
     .charts {

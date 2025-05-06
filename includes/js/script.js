@@ -294,6 +294,8 @@ window.onload = function () {
   });
 };
 
+
+// Sidebar active link
 document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll('.sidebar a');
     const currentUrl = window.location.pathname;

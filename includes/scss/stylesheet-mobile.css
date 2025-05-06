@@ -271,13 +271,17 @@ strong {
   .footer {
     text-align: center;
   }
-  .card {
+  .card-ad, .card {
     display: flex;
     justify-content: center;
     height: 53vw;
     width: 80vw;
     margin: 0 auto;
     position: relative;
+  }
+  .card-ad canvas, .card canvas {
+    width: 100% !important;
+    height: 100% !important;
   }
   .charts {
     display: flex;

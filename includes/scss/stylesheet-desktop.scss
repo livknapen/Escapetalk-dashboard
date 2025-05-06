@@ -18,7 +18,7 @@ strong {
 
 
     .content {
-        padding: 0 120px 0 240px;
+        padding: 0 7vw 0 15vw;
     }
 
 
@@ -328,6 +328,7 @@ strong {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        margin-bottom: 50px;
     }
 
 
@@ -346,7 +347,12 @@ strong {
         max-width: 40%;
     }
 
-    .review-statistieken,
+    .review-statistieken {
+        @extend %statistiek-blok;
+        min-width: 110%;
+        margin-bottom: 7vw;
+    }
+
     .bezoekers-statistieken {
         @extend %statistiek-blok;
         min-width: 110%;
@@ -403,6 +409,7 @@ strong {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        margin-bottom: 50px;
     }
 
 
@@ -410,8 +417,7 @@ strong {
         display: flex;
         flex-wrap: wrap;
         gap: 34px;
-        margin-left: 3vw;
-        margin-right: 3vw;
+        margin-left: 9vw;
         justify-content: space-between;
     }
 
@@ -433,27 +439,40 @@ strong {
     }
 
 
-    .card {
+    %card-base {
         display: flex;
         justify-content: center;
+        margin: 0 auto;
+        position: relative;
         width: 100%;
-        max-width: 35vw;
-        height: 300px;
-    }
+        max-width: 800px;
+        height: 400px;
+      
+        canvas {
+          width: 100% !important;
+          height: 100% !important;
+        }
+      
+        @media (max-width: 600px) {
+          height: 250px;
+        }
+      }
+      
+      .card {
+        @extend %card-base;
+        max-width: 34vw;
+        height: 18vw;
+      }
+      
+      .card-ad {
+        @extend %card-base;
+        max-width: 28vw;
+        height: 18vw;
+      }      
 
-
-    .card-ad {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        max-width: 35vw;
-        height: 300px;
-    }
 
     .charts {
         display: flex;
         justify-content: center;
     }
-
-
 }
