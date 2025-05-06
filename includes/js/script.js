@@ -310,3 +310,14 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // Locked review-statistieken
+// const heeftVriendAbonnement = false;
+
+// const reviewStatistieken = document.querySelector('.review-statistieken');
+
+// if (!heeftVriendAbonnement) {
+//   reviewStatistieken.classList.add('locked');
+// } else {
+//   reviewStatistieken.classList.remove('locked');
+// }

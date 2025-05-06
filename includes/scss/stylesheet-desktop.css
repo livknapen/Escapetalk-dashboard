@@ -22,6 +22,7 @@ strong {
     overflow-x: hidden;
     transition: width 0.3s ease;
     padding-top: 130px;
+    z-index: 20;
   }
   .sidebar:hover {
     width: 350px;
@@ -114,7 +115,7 @@ strong {
     margin-bottom: 42px;
     min-width: 15%;
   }
-  .button-lang-alle-reviews, .button-reageren, .button-lang-ad, .button-lang {
+  .button-lang-locked, .button-lang-alle-reviews, .button-reageren, .button-lang-ad, .button-lang {
     background-color: #8FC936;
     border: none;
     padding: 10px 20px;
@@ -140,6 +141,9 @@ strong {
     max-width: 30%;
     padding: 8px 12px;
     font-size: 12px;
+  }
+  .button-lang-locked {
+    min-width: 93%;
   }
   .filter-button {
     background-color: #8FC936;
@@ -356,5 +360,50 @@ strong {
   .charts {
     display: flex;
     justify-content: center;
+  }
+  .review-statistieken,
+  .bezoekers-statistieken,
+  .advertentie-statistieken {
+    position: relative;
+  }
+  .review-statistieken .overlay,
+  .bezoekers-statistieken .overlay,
+  .advertentie-statistieken .overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .review-statistieken.locked .overlay,
+  .bezoekers-statistieken.locked .overlay,
+  .advertentie-statistieken.locked .overlay {
+    display: flex;
+  }
+  .review-statistieken .overlay-top,
+  .bezoekers-statistieken .overlay-top,
+  .advertentie-statistieken .overlay-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 100px;
+  }
+  .review-statistieken .overlay-locked,
+  .bezoekers-statistieken .overlay-locked,
+  .advertentie-statistieken .overlay-locked {
+    font-size: 27px;
+    color: #000;
+    font-weight: 600;
+    padding: 0 100px;
   }
 }/*# sourceMappingURL=stylesheet-desktop.css.map */

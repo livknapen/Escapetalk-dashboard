@@ -34,6 +34,7 @@ strong {
         overflow-x: hidden;
         transition: width 0.3s ease;
         padding-top: 130px;
+        z-index: 20;
       
         &:hover {
           width: 350px;
@@ -187,6 +188,11 @@ strong {
 
     .button-lang-alle-reviews {
         @extend %button-base;
+    }
+
+    .button-lang-locked {
+        @extend %button-base;
+        min-width: 93%;
     }
 
 
@@ -475,4 +481,51 @@ strong {
         display: flex;
         justify-content: center;
     }
+
+
+    .review-statistieken,
+    .bezoekers-statistieken,
+    .advertentie-statistieken {
+        position: relative;
+      
+        .overlay {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.97);
+          z-index: 10;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          border-radius: 5px;
+        }
+      
+        &.locked .overlay {
+          display: flex;
+        }
+      
+        .overlay-top {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+          margin-top: 100px;
+        }
+      
+        .overlay-locked {
+          font-size: $font-size-1;
+          color: #000;
+          font-weight: 600;
+          padding: 0 100px;
+        }
+      
+      }
+      
+      
+      
 }
