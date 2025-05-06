@@ -39,8 +39,8 @@ window.onload = function () {
   // Data voor aantal kliks
   const adWeekLabels = ["Ad1", "Ad2"];
   const adUitleg = {
-    Ad1: "dezeadvertentieisvoordezomer",
-    Ad2: "dezeadvertentieisvoordewinter",
+    Ad1: "ad1: deze advertentie is voor de zomer",
+    Ad2: "ad2: deze advertentie is voor de winter",
   };
   const adAantalKliks = [76, 103];
 
@@ -77,7 +77,7 @@ window.onload = function () {
       ],
     },
     options: {
-      responsive: false,
+      responsive: true,
       maintainAspectRatio: false,
       scales: {
         x: {
@@ -136,7 +136,7 @@ window.onload = function () {
       ],
     },
     options: {
-      responsive: false,
+      responsive: true,
       maintainAspectRatio: false,
       scales: {
         x: {
@@ -241,7 +241,7 @@ window.onload = function () {
           type: "bar",
           label: "Jij",
           data: adAantalKliks,
-          backgroundColor: ["#3585ED", "#58C7FF"],
+          backgroundColor: adAantalKliks.map(() => "#3585ED"),
           barThickness: 30,
           borderRadius: 20,
           borderSkipped: false,
@@ -250,7 +250,7 @@ window.onload = function () {
     },
     options: {
       indexAxis: "y",
-      responsive: false,
+      responsive: true,
       maintainAspectRatio: false,
       scales: {
         x: {

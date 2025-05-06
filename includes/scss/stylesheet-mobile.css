@@ -274,5 +274,13 @@ strong {
   .card {
     display: flex;
     justify-content: center;
+    height: 53vw;
+    width: 80vw;
+    margin: 0 auto;
+    position: relative;
+  }
+  .charts {
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=stylesheet-mobile.css.map */

@@ -18,7 +18,7 @@ strong {
 
 
     .content {
-        padding: 0 120px 0 300px;
+        padding: 0 120px 0 240px;
     }
 
 
@@ -349,7 +349,7 @@ strong {
     .review-statistieken,
     .bezoekers-statistieken {
         @extend %statistiek-blok;
-        min-width: 100%;
+        min-width: 110%;
     }
 
     .advertentie-statistieken {
@@ -386,7 +386,7 @@ strong {
     .containers-underneath {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         flex-direction: column;
     }
 
@@ -401,7 +401,7 @@ strong {
 
     .container-third-row {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-direction: row;
     }
 
@@ -434,6 +434,23 @@ strong {
 
 
     .card {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 35vw;
+        height: 300px;
+    }
+
+
+    .card-ad {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 35vw;
+        height: 300px;
+    }
+
+    .charts {
         display: flex;
         justify-content: center;
     }
