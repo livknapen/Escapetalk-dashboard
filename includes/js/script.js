@@ -321,3 +321,32 @@ document.addEventListener("DOMContentLoaded", function () {
 // } else {
 //   reviewStatistieken.classList.remove('locked');
 // }
+
+
+// Open modal
+document.querySelectorAll('.open-modal-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const modal = btn.closest('.blok-button-reageren').querySelector('.popup-modal');
+      modal.classList.add('visible');
+    });
+  });
+  
+  // Sluit modal via x
+  document.querySelectorAll('.popup-modal .close').forEach((closeBtn) => {
+    closeBtn.addEventListener('click', () => {
+      const modal = closeBtn.closest('.popup-modal');
+      modal.classList.remove('visible');
+    });
+  });
+  
+  // Sluit modal bij klik buiten de inhoud
+  window.addEventListener('click', (e) => {
+    document.querySelectorAll('.popup-modal.visible').forEach((modal) => {
+      if (e.target === modal) {
+        modal.classList.remove('visible');
+      }
+    });
+  });
+  
+  
+

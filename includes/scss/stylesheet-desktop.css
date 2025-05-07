@@ -1,3 +1,4 @@
+@charset "UTF-8";
 strong {
   font-weight: 500;
 }
@@ -95,6 +96,9 @@ strong {
     flex-direction: row-reverse;
     margin-top: -132px;
   }
+  .image-wrapper-user {
+    display: flex;
+  }
   .aantal-credits {
     display: flex;
     justify-items: flex-start;
@@ -115,7 +119,7 @@ strong {
     margin-bottom: 42px;
     min-width: 15%;
   }
-  .button-lang-locked, .button-lang-alle-reviews, .button-reageren, .button-lang-ad, .button-lang {
+  .button-lang-locked, .button-lang-alle-reviews, .button-reageren-popup, .button-reageren, .button-lang-ad, .button-lang {
     background-color: #8FC936;
     border: none;
     padding: 10px 20px;
@@ -142,6 +146,13 @@ strong {
     padding: 8px 12px;
     font-size: 12px;
   }
+  .button-reageren-popup {
+    margin: 15px 0 0 0;
+    margin-top: 0px;
+    width: 13%;
+    padding: 8px 12px;
+    font-size: 15px;
+  }
   .button-lang-locked {
     min-width: 93%;
   }
@@ -166,7 +177,7 @@ strong {
     background-color: white;
     color: #000;
   }
-  .blok-review-datum, .blok-extra-ad, .blok-extra-ranking, .blok-extra, .blok-inhoud, .blok-naam {
+  .blok-review-datum-popup, .blok-review-datum, .blok-extra-ad, .blok-extra-ranking, .blok-extra, .blok-inhoud, .blok-naam {
     color: #000;
     padding-left: 20px;
   }
@@ -203,6 +214,13 @@ strong {
     margin-right: 10px;
     padding-left: 0;
   }
+  .blok-review-datum-popup {
+    font-size: 12px;
+    font-weight: 200;
+    margin-right: 10px;
+    padding-left: 0;
+    text-align: start;
+  }
   .blok-extra-onder {
     font-size: 15px;
     color: #000;
@@ -211,7 +229,7 @@ strong {
     font-weight: 200;
     margin-bottom: 28px;
   }
-  .blok-button-reageren, .blok-review-tekst, .blok-review-kop, .blok-score, .blok-username {
+  .blok-button-reageren, .blok-review-tekst-popup, .blok-review-tekst, .blok-review-kop-popup, .blok-review-kop, .blok-score-popup, .blok-score, .blok-username-popup, .blok-username {
     color: #000;
   }
   .blok-username {
@@ -219,6 +237,13 @@ strong {
     font-weight: 200;
     margin-top: 16px;
     margin-right: 0;
+  }
+  .blok-username-popup {
+    font-size: 17px;
+    color: #f23838;
+    font-weight: 500;
+    margin: 0;
+    text-align: start;
   }
   .blok-score {
     font-size: 17px;
@@ -230,15 +255,49 @@ strong {
     border-radius: 3px;
     color: white;
   }
+  .blok-score-popup {
+    font-size: 27px;
+    font-weight: 500;
+    margin-top: 16px;
+    background-color: #0084f5;
+    padding: 16px;
+    border-radius: 3px;
+    color: white;
+  }
   .blok-review-kop {
     font-size: 17px;
     font-weight: 500;
     margin-top: 16px;
   }
+  .blok-review-kop-popup {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 16px;
+    text-align: start;
+  }
   .blok-review-tekst {
     font-size: 15px;
     font-weight: 300;
     margin-top: -6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+  }
+  .blok-review-tekst::after {
+    content: "”";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline;
+  }
+  .blok-review-tekst-popup {
+    font-size: 15px;
+    font-weight: 300;
+    margin-right: 50px;
+    text-align: start;
   }
   .blok-button-reageren {
     display: flex;
@@ -405,5 +464,128 @@ strong {
     color: #000;
     font-weight: 600;
     padding: 0 100px;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal.visible {
+    display: flex;
+  }
+  .modal.visible .modal-content {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+  .modal.fade-out .modal-content {
+    animation: fadeOut 0.3s ease-in forwards;
+  }
+  .modal .modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+  }
+  .modal .close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+  }
+  .modal .close:hover {
+    color: #000;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+  }
+  .start-wrapper-popup {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .user-info-popup {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .inhoud-popup {
+    display: flex;
+    flex-direction: column;
+  }
+  .alle-inhoud-popup {
+    display: flex;
+    flex-direction: row;
+  }
+  .blok-wrapper-score-popup {
+    display: flex;
+    flex-direction: column;
+    padding-right: 80px;
+  }
+  .blok-score-wrapper-popup {
+    display: flex;
+    flex-direction: row;
+  }
+  .blok-score-extra-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    margin-left: 10px;
+    min-width: 100%;
+  }
+  .blok-score-extra-popup-tekst {
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0;
+  }
+  .light-grey-line {
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    width: 100%;
+  }
+  hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+  }
+  .textarea-wrapper-popup {
+    display: flex;
+    flex-direction: column;
+  }
+  .textarea-popup {
+    font-size: 12px;
+    margin: 30px 0;
+  }
+  .button-reageren-wrapper-popup {
+    display: flex;
+    justify-content: flex-end;
   }
 }/*# sourceMappingURL=stylesheet-desktop.css.map */
