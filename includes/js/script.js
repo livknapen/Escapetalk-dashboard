@@ -294,24 +294,23 @@ window.onload = function () {
   });
 };
 
-
 // Sidebar active link
 document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll('.sidebar a');
-    const currentUrl = window.location.pathname;
+  const links = document.querySelectorAll(".sidebar a");
+  const currentUrl = window.location.pathname;
 
-    links.forEach(link => {
-      const linkPath = new URL(link.href).pathname;
+  links.forEach((link) => {
+    const linkPath = new URL(link.href).pathname;
 
-      if (linkPath === currentUrl) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
-    });
+    if (linkPath === currentUrl) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
   });
+});
 
-  // Locked review-statistieken
+// Locked review-statistieken
 // const heeftVriendAbonnement = false;
 
 // const reviewStatistieken = document.querySelector('.review-statistieken');
@@ -322,31 +321,75 @@ document.addEventListener("DOMContentLoaded", function () {
 //   reviewStatistieken.classList.remove('locked');
 // }
 
+let scrollPosition = 0;
 
-// Open modal
-document.querySelectorAll('.open-modal-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const modal = btn.closest('.blok-button-reageren').querySelector('.popup-modal');
-      modal.classList.add('visible');
-    });
-  });
-  
-  // Sluit modal via x
-  document.querySelectorAll('.popup-modal .close').forEach((closeBtn) => {
-    closeBtn.addEventListener('click', () => {
-      const modal = closeBtn.closest('.popup-modal');
-      modal.classList.remove('visible');
-    });
-  });
-  
-  // Sluit modal bij klik buiten de inhoud
-  window.addEventListener('click', (e) => {
-    document.querySelectorAll('.popup-modal.visible').forEach((modal) => {
-      if (e.target === modal) {
-        modal.classList.remove('visible');
-      }
-    });
-  });
-  
-  
+function openModal(modal) {
+  scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
+  // Bepaal scrollbarbreedte
+  const scrollbarWidth =
+    window.innerWidth - document.documentElement.clientWidth;
+
+  // Vergrendel body en compenseer voor scrollbar
+  document.body.classList.add("modal-open");
+  document.body.style.top = `-${scrollPosition}px`;
+  document.body.style.paddingRight = `${scrollbarWidth}px`;
+
+  modal.classList.add("visible");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("visible");
+  document.body.classList.remove("modal-open");
+
+  // Herstel scroll en layout
+  const scrollY = parseInt(document.body.style.top || "0") * -1;
+  document.body.style.top = "";
+  document.body.style.paddingRight = "";
+
+  // Scroll terug
+  window.scrollTo(0, scrollY);
+}
+
+// Open knop
+document.querySelectorAll(".open-modal-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const modal = btn
+      .closest(".blok-button-reageren")
+      .querySelector(".popup-modal");
+    openModal(modal);
+  });
+});
+
+// Sluit via x
+document.querySelectorAll(".popup-modal .close").forEach((closeBtn) => {
+  closeBtn.addEventListener("click", () => {
+    const modal = closeBtn.closest(".popup-modal");
+    closeModal(modal);
+  });
+});
+
+// Sluit bij klik buiten popup
+window.addEventListener("click", (e) => {
+  document.querySelectorAll(".popup-modal.visible").forEach((modal) => {
+    if (e.target === modal) {
+      closeModal(modal);
+    }
+  });
+});
+
+// Sluit bij Escape
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    document.querySelectorAll(".popup-modal.visible").forEach((modal) => {
+      closeModal(modal);
+    });
+  }
+});
+
+document.querySelectorAll('.textarea-popup').forEach((textarea) => {
+    textarea.addEventListener('input', () => {
+      textarea.style.height = 'auto'; // reset eerst
+      textarea.style.height = textarea.scrollHeight + 'px'; // stel hoogte opnieuw in
+    });
+  });
