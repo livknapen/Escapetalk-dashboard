@@ -120,13 +120,14 @@ strong {
         border-radius: 5px;
         margin-bottom: 42px;
         min-width: 30%;
+        position: relative;
     }
 
 
     .image-wrapper-pim {
-        display: flex;
-        flex-direction: row-reverse;
-        margin-top: -132px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
 
 
@@ -405,7 +406,7 @@ strong {
         @extend %blok-basis;
         font-size: $font-size-3;
         font-weight: 300;
-        margin-right: 50px;
+        margin-right: 150px;
         text-align: start;
     }
 
@@ -645,6 +646,7 @@ strong {
           width: 90%;
           overflow-y: auto;
           position: relative;
+          max-height: 90%;
         }
       
         .modal-header {
@@ -837,6 +839,13 @@ strong {
         text-align: left;
         font-size: $font-size-3;
     }
+
+
+    // .procon .pros {
+    //     max-height: 190px;
+    //     overflow-y: scroll;
+    // }
+
 
     .pros {
         margin: 20px 0;
