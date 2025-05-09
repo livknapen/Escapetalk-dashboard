@@ -393,3 +393,19 @@ document.querySelectorAll('.textarea-popup').forEach((textarea) => {
       textarea.style.height = textarea.scrollHeight + 'px'; // stel hoogte opnieuw in
     });
   });
+
+
+// Toggle menu
+const toggle = document.getElementById('menu-toggle');
+const overlay = document.getElementById('overlay');
+
+toggle.addEventListener('click', () => {
+  toggle.classList.toggle('open');
+  overlay.classList.toggle('open');
+});
+
+overlay.addEventListener('click', () => {
+  toggle.classList.remove('open');
+  overlay.classList.remove('open');
+});
+

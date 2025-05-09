@@ -7,6 +7,67 @@ strong {
   body {
     background-color: #FEFAF9;
     font-family: "Montserrat", sans-serif;
+    color: #333;
+    margin: 140px 0 0 0;
+  }
+  .header {
+    background-color: #8FC936;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    z-index: 100;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0;
+    width: 100%;
+  }
+  .header-tekst {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .mobile-logo {
+    display: flex;
+    height: 30px;
+  }
+  .menu-toggle {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 110;
+  }
+  .menu-toggle span {
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+  }
+  .menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+  .overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #8FC936;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    z-index: 50;
+  }
+  .overlay.open {
+    height: 100vh;
   }
   .sidebar {
     display: none;
