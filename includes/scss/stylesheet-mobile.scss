@@ -185,6 +185,7 @@ strong {
     .button-lang {
         @extend %button-base;
         max-width: 63%;
+        z-index: 10;
     }
 
     .button-lang-ad {
@@ -610,7 +611,7 @@ strong {
     .modal {
         display: none;
         position: fixed;
-        z-index: 99;
+        z-index: 101;
         inset: 0;
         width: 100%;
         min-height: 100dvh;

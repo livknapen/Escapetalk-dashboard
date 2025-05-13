@@ -335,6 +335,7 @@ function openModal(modal) {
   document.body.style.top = `-${scrollPosition}px`;
   document.body.style.paddingRight = `${scrollbarWidth}px`;
 
+
   modal.classList.add("visible");
 }
 
@@ -346,6 +347,7 @@ function closeModal(modal) {
   const scrollY = parseInt(document.body.style.top || "0") * -1;
   document.body.style.top = "";
   document.body.style.paddingRight = "";
+  
 
   // Scroll terug
   window.scrollTo(0, scrollY);
@@ -354,12 +356,22 @@ function closeModal(modal) {
 // Open knop
 document.querySelectorAll(".open-modal-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
-    const modal = btn
-      .closest(".blok-button-reageren")
-      .querySelector(".popup-modal");
-    openModal(modal);
+    let modal = btn.parentElement.querySelector(".popup-modal");
+
+    if (!modal) {
+      modal = btn.nextElementSibling;
+      while (modal && !modal.classList.contains("popup-modal")) {
+        modal = modal.nextElementSibling;
+      }
+    }
+    if (modal) {
+      openModal(modal);
+    } else {
+      console.warn("Geen bijbehorende modal gevonden voor knop:", btn);
+    }
   });
 });
+
 
 // Sluit via x
 document.querySelectorAll(".popup-modal .close").forEach((closeBtn) => {
@@ -389,8 +401,8 @@ document.addEventListener("keydown", (e) => {
 
 document.querySelectorAll('.textarea-popup').forEach((textarea) => {
     textarea.addEventListener('input', () => {
-      textarea.style.height = 'auto'; // reset eerst
-      textarea.style.height = textarea.scrollHeight + 'px'; // stel hoogte opnieuw in
+      textarea.style.height = 'auto';
+      textarea.style.height = textarea.scrollHeight + 'px';
     });
   });
 
