@@ -16,8 +16,12 @@ strong {
         background-color: #FEFAF9;
         font-family: 'Montserrat', sans-serif;
         color: #333;
-        margin: 140px 0 0 0;
+        margin: 0;
 }
+
+    header {
+        padding-bottom: 140px;
+    }
 
 
     .header {
@@ -237,7 +241,7 @@ strong {
     %button-base {
         background-color: $primary-color;
         border: none;
-        padding: 10px 20px;
+        padding: 10px 12px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -453,6 +457,15 @@ strong {
     }
 
 
+    .blok-voordelen-kop-popup {
+        @extend %blok-basis;
+        font-size: $font-size-2;
+        font-weight: 500;
+        margin-top: 16px;
+        text-align: center;
+    }
+
+
     .blok-review-tekst {
         @extend %blok-basis;
         font-size: $font-size-3;
@@ -481,6 +494,14 @@ strong {
         font-size: $font-size-3;
         font-weight: 300;
         margin-right: 150px;
+        text-align: start;
+    }
+
+
+    .blok-voordelen-tekst-popup {
+        @extend %blok-basis;
+        font-size: $font-size-3;
+        font-weight: 300;
         text-align: start;
     }
 
@@ -676,7 +697,7 @@ strong {
             flex-direction: column;
             align-items: center;
             gap: 12px;
-            margin-top: 100px;
+            margin-top: 20%;
         }
 
         .overlay-locked {
@@ -796,9 +817,16 @@ strong {
         flex-direction: column;
     }
 
+
     .alle-inhoud-popup {
         display: flex;
         flex-direction: row;
+    }
+
+
+    .alle-inhoud-voordelen-popup {
+        display: flex;
+        justify-content: center;
     }
 
 
@@ -926,5 +954,16 @@ strong {
     .pros ul li {
         list-style-image: url(/includes/media/plus-circle.svg);
     }
+
+
+    ul {
+        list-style: circle;
+
+        li {
+                margin-bottom: 10px;
+                list-style-image: url(/includes/media/unlock.png);
+        }
+    }
+
 
 }

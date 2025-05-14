@@ -8,7 +8,10 @@ strong {
     background-color: #FEFAF9;
     font-family: "Montserrat", sans-serif;
     color: #333;
-    margin: 140px 0 0 0;
+    margin: 0;
+  }
+  header {
+    padding-bottom: 140px;
   }
   .header {
     background-color: #8FC936;
@@ -237,7 +240,7 @@ strong {
     font-weight: 200;
     margin-bottom: 28px;
   }
-  .blok-button-reageren, .blok-review-tekst-popup, .blok-review-tekst, .blok-review-kop-popup, .blok-review-kop, .blok-score-popup, .blok-score, .blok-username-popup, .blok-username {
+  .blok-button-reageren, .blok-voordelen-tekst-popup, .blok-review-tekst-popup, .blok-review-tekst, .blok-voordelen-kop-popup, .blok-review-kop-popup, .blok-review-kop, .blok-score-popup, .blok-score, .blok-username-popup, .blok-username {
     color: #000;
   }
   .blok-username {
@@ -284,6 +287,12 @@ strong {
     text-align: start;
     margin-bottom: 0;
   }
+  .blok-voordelen-kop-popup {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 16px;
+    text-align: center;
+  }
   .blok-review-tekst {
     font-size: 15px;
     font-weight: 300;
@@ -311,6 +320,11 @@ strong {
     font-size: 15px;
     font-weight: 300;
     margin-top: -6px;
+  }
+  .blok-voordelen-tekst-popup {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: start;
   }
   .blok-button-reageren {
     display: flex;
@@ -551,6 +565,10 @@ strong {
     flex-direction: column;
     margin-top: 20px;
   }
+  .alle-inhoud-voordelen-popup {
+    display: flex;
+    justify-content: center;
+  }
   .blok-wrapper-score-popup {
     display: flex;
     flex-direction: column;
@@ -642,5 +660,12 @@ strong {
   }
   .pros ul li {
     list-style-image: url(/includes/media/plus-circle.svg);
+  }
+  ul {
+    list-style: circle;
+  }
+  ul li {
+    margin-bottom: 10px;
+    list-style-image: url(/includes/media/unlock.png);
   }
 }/*# sourceMappingURL=stylesheet-mobile.css.map */
