@@ -1,0 +1,293 @@
+// ========== 1. Pagina-structuur ==========
+.content-start {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.blok-start {
+  font-size: $font-size-1;
+  color: #000;
+  margin: 0;
+}
+
+.container-first-row,
+.container-second-row,
+.container-third-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-first-row {
+  justify-content: space-between;
+}
+
+.containers-underneath {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+}
+
+.containers-underneath-small {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  margin: 0 5vw;
+  justify-content: space-between;
+}
+
+
+// ========== 2. Statistiekblokken ==========
+@mixin statistiek-blok {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  background-color: #ffff;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 42px;
+}
+
+.huidig-abonnement,
+.aantal-credits,
+.ranking {
+  @include statistiek-blok;
+  min-width: 90%;
+}
+
+.kleine-statistieken {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 45%;
+  word-wrap: break-word;
+}
+
+.nieuwe-reviews {
+  @include statistiek-blok;
+  max-width: 90%;
+}
+
+.review-statistieken,
+.bezoekers-statistieken,
+.advertentie-statistieken {
+  @include statistiek-blok;
+  min-width: 90%;
+}
+
+
+// ========== 3. Review-overzichten ==========
+.reviews-blok {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  margin-right: 14px;
+}
+
+.reviews-blok-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.reviews-inhoud {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 6px;
+}
+
+.statistieken-inhoud {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 14px 0 0;
+}
+
+
+// ========== 4. Blok-inhoud en teksten ==========
+.blok-naam,
+.blok-inhoud,
+.blok-extra,
+.blok-extra-ranking,
+.blok-extra-ad,
+.blok-review-datum,
+.blok-review-datum-popup {
+  @include blok-stijl;
+}
+
+.blok-naam {
+  font-size: $font-size-2;
+  margin-bottom: -5px;
+  margin-right: 10px;
+}
+
+.blok-inhoud {
+  font-size: $font-size-1;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.blok-extra,
+.blok-extra-ranking,
+.blok-extra-ad {
+  font-size: $font-size-3;
+  font-weight: 200;
+  margin-top: 16px;
+}
+
+.blok-extra-ad {
+  padding-right: 88px;
+}
+
+.blok-review-datum,
+.blok-review-datum-popup {
+  font-size: $font-size-4;
+  font-weight: 200;
+  margin-right: 10px;
+  padding-left: 0;
+  text-align: start;
+}
+
+.blok-extra-onder {
+  font-size: $font-size-3;
+  color: #000;
+  font-weight: 200;
+  margin: 8px 0 28px 20px;
+}
+
+
+// ========== 5. Gebruiker, score, titels ==========
+%blok-basis {
+  color: #000;
+}
+
+.blok-username,
+.blok-username-popup,
+.blok-score,
+.blok-score-popup,
+.blok-review-kop,
+.blok-review-kop-popup,
+.blok-voordelen-kop-popup,
+.blok-review-tekst,
+.blok-review-tekst-popup,
+.blok-voordelen-tekst-popup,
+.blok-button-reageren {
+  @include blok-basis;
+}
+
+.blok-username {
+  font-size: $font-size-4;
+  font-weight: 200;
+  margin-top: 16px;
+}
+
+.blok-username-popup {
+  font-size: $font-size-2;
+  font-weight: 500;
+  color: $third-color;
+  margin: 0;
+  text-align: start;
+}
+
+.blok-score,
+.blok-score-popup {
+  background-color: #0084f5;
+  color: white;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.blok-score {
+  font-size: $font-size-2;
+  padding: 12px;
+  margin-top: 16px;
+  margin-left: 17px;
+}
+
+.blok-score-popup {
+  font-size: $font-size-1;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.blok-review-kop,
+.blok-review-kop-popup,
+.blok-voordelen-kop-popup {
+  font-size: $font-size-2;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.blok-review-kop-popup {
+  text-align: start;
+  margin-bottom: 0;
+}
+
+.blok-voordelen-kop-popup {
+  text-align: center;
+}
+
+.blok-review-tekst {
+  font-size: $font-size-3;
+  font-weight: 300;
+  margin-top: -6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+
+  &::after {
+    content: '”';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline;
+  }
+}
+
+.blok-review-tekst-popup,
+.blok-voordelen-tekst-popup {
+  font-size: $font-size-3;
+  font-weight: 300;
+  text-align: start;
+}
+
+.blok-button-reageren {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+// ========== 6. Afbeeldingen ==========
+.image-wrapper-pim {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: -132px;
+}
+
+
+// ========== 7. Footer en helpers ==========
+.footer {
+  text-align: center;
+}
+
+.light-grey-line {
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}

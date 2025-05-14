@@ -1,0 +1,37 @@
+// ========== Label-container ==========
+.labels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 12px 0;
+}
+
+
+// ========== Algemene label-styling ==========
+label {
+  padding: 5px 10px;
+  margin: 0 10px 10px 0;
+}
+
+.label svg {
+  width: 15px;
+  margin-right: 5px;
+  color: #333;
+}
+
+
+// ========== Grijze label-variant ==========
+.label-tGrey {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #888;
+  min-width: 30px;
+  min-height: 30px;
+  padding: 5px 20px;
+  font-size: $font-size-4;
+  font-weight: 400;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 #f2f2f2;
+  margin: 7px 0;
+}

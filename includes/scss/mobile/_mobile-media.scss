@@ -1,0 +1,23 @@
+// _media.scss
+@media (max-width: 768px) {
+  body {
+    background-color: #FEFAF9;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin: 0;
+  }
+
+  header {
+    padding-bottom: 140px;
+  }
+
+@import 'mobile-header';
+@import 'mobile-buttons';
+@import 'mobile-modals';
+@import 'mobile-sidebar';
+@import 'mobile-labels';
+@import 'mobile-cards';
+@import 'mobile-content';
+@import 'mobile-overlay';
+@import 'mobile-popup';
+}

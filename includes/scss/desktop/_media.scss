@@ -1,0 +1,23 @@
+// _media.scss
+@media (min-width: 769px) {
+  body {
+    background-color: #FEFAF9;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin: 0;
+  }
+
+  header {
+    padding-bottom: 140px;
+  }
+
+@import 'header';
+@import 'buttons';
+@import 'modals';
+@import 'sidebar';
+@import 'labels';
+@import 'cards';
+@import 'content';
+@import 'overlay';
+@import 'popup';
+}

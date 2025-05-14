@@ -1,0 +1,62 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow-x: hidden;
+  padding-top: 130px;
+  z-index: 20;
+  transition: width 0.3s ease;
+
+  &:hover {
+    width: 350px;
+
+    .label {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        margin-bottom: 16px;
+        color: #000;
+        text-decoration: none;
+
+        &.active {
+          font-weight: bold;
+        }
+
+        svg {
+          flex-shrink: 0;
+          width: 24px;
+          height: 24px;
+          fill: #000;
+          margin-right: 16px;
+          min-width: 60px;
+          text-align: center;
+        }
+
+        .label {
+          opacity: 0;
+          visibility: hidden;
+          white-space: nowrap;
+          transition: opacity 0.3s ease, visibility 0.3s ease;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.card {
+  @include card-base;
+  max-width: 34vw;
+  height: 18vw;
+}
+
+.card-ad {
+  @include card-base;
+  max-width: 28vw;
+  height: 18vw;
+}
+
+.charts {
+  display: flex;
+  justify-content: center;
+}

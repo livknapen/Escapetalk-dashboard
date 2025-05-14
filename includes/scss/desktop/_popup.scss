@@ -1,0 +1,152 @@
+// ========== 1. Popup-layout en wrappers ==========
+.start-wrapper-popup {
+  display: flex;
+  margin: 23px 0 40px 0;
+}
+
+.inhoud-popup,
+.textarea-wrapper-popup {
+  display: flex;
+  flex-direction: column;
+
+  .user-info-popup{
+  margin-left: 10px;
+  }
+}
+
+.alle-inhoud-popup {
+  display: flex;
+  flex-direction: row;
+}
+
+.alle-inhoud-voordelen-popup {
+  display: flex;
+  justify-content: center;
+}
+
+.button-reageren-wrapper-popup {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+// ========== 2. Scoreblokken ==========
+.blok-wrapper-score-popup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.blok-score-wrapper-popup {
+  display: flex;
+  flex-direction: row;
+}
+
+.blok-score-extra-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  margin-left: 15px;
+}
+
+.blok-score-extra-popup-tekst {
+  font-weight: 300;
+  font-size: $font-size-3;
+  margin: 0;
+}
+
+
+// ========== 3. Tekstveld / reactieformulier ==========
+.textarea-popup {
+  font-size: $font-size-4;
+  margin: 30px 0;
+  resize: none;
+  max-height: 10vw;
+}
+
+
+// ========== 4. Labels ==========
+.labels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 12px 0;
+}
+
+label {
+  padding: 5px 10px;
+  margin: 0 10px 10px 0;
+
+  svg {
+    width: 15px;
+    margin-right: 5px;
+    color: #333;
+  }
+}
+
+.label-tGrey {
+  color: #888;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  min-width: 30px;
+  min-height: 30px;
+  height: auto;
+  padding: 5px 20px;
+  font-size: $font-size-4;
+  font-weight: 400;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 #f2f2f2;
+  margin: 7px 0;
+}
+
+
+// ========== 5. Pro/con lijsten ==========
+.procon ul {
+  margin: 0;
+  padding-left: 20px;
+  text-align: left;
+  font-size: $font-size-3;
+
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+.pros {
+  margin: 20px 0;
+
+  ul li {
+    list-style-image: url(/includes/media/plus-circle.svg);
+  }
+}
+
+
+// ========== 6. Lijnen / HR ==========
+.light-grey-line {
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+
+  &.hide {
+    display: none;
+  }
+}
+
+
+// ========== 7. Algemene lijst-styling ==========
+ul {
+  list-style: circle;
+
+  li {
+    margin-bottom: 10px;
+    list-style-image: url(/includes/media/unlock.png);
+  }
+}

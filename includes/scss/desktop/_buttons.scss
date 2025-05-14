@@ -1,0 +1,76 @@
+// Basis button styling
+@mixin button-base {
+  background-color: $primary-color;
+  border: none;
+  padding: 10px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: $font-size-3;
+  color: #ffff;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 600;
+  margin: 15px 20px;
+}
+
+// Buttons gebaseerd op button-base
+
+.button-lang {
+  @include button-base;
+  max-width: 63%;
+}
+
+.button-lang-ad {
+  @include button-base;
+  margin-top: -5px;
+}
+
+.button-lang-alle-reviews {
+  @include button-base;
+}
+
+.button-lang-locked {
+  @include button-base;
+  min-width: 93%;
+}
+
+.button-reageren {
+  @include button-base;
+  margin: 15px 0;
+  margin-top: 0;
+  max-width: 30%;
+  padding: 8px 12px;
+  font-size: $font-size-4;
+}
+
+.button-reageren-popup {
+  @include button-base;
+  margin: 15px 0 0 0;
+  width: 13%;
+  padding: 8px 12px;
+  font-size: $font-size-3;
+}
+
+// Filter button met afwijkende styling
+
+.filter-button {
+  background-color: $primary-color;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: $font-size-3;
+  color: #ffff;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 400;
+  margin: 20px 0 30px 20px;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+
+  &.inactive {
+    background-color: white;
+    color: #000;
+  }
+}
