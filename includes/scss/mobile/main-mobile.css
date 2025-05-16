@@ -102,6 +102,7 @@ label {
     margin: 15px 20px;
     max-width: 63%;
     z-index: 10;
+    padding: 10px 13px;
   }
   .button-lang-ad {
     background-color: #8FC936;
@@ -146,6 +147,27 @@ label {
     font-weight: 600;
     margin: 15px 20px;
     min-width: 93%;
+  }
+  .button-home {
+    background-color: #8FC936;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 600;
+    margin: 15px 20px;
+    width: 42%;
+    padding: 8px 12px;
+    background-color: #f23838;
+    margin-top: 5vw;
+    position: absolute;
+    right: 0;
+    top: 47vw;
   }
   .button-reageren {
     background-color: #8FC936;
@@ -227,7 +249,7 @@ label {
     background-color: #fff;
     padding: 0 30px 30px;
     border-radius: 5px;
-    width: 75%;
+    width: 77%;
     max-height: 80vh;
     overflow-y: auto;
     position: relative;
@@ -337,11 +359,19 @@ label {
   }
   .content-start {
     text-align: center;
-    margin: 50px 0;
+    margin: 0 0 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .blok-start {
     font-size: 27px;
     color: #000;
+    margin: 0;
+  }
+  .blok-start-extra {
+    font-size: 27px;
+    color: #f23838;
     margin: 0;
   }
   .container-first-row,
@@ -365,7 +395,7 @@ label {
   .containers-underneath-small {
     display: flex;
     flex-wrap: wrap;
-    gap: 34px;
+    gap: 33px;
     margin: 0 5vw;
     justify-content: space-between;
   }
@@ -588,42 +618,59 @@ label {
   .advertentie-statistieken {
     position: relative;
   }
-  .review-statistieken.locked .overlay,
-  .bezoekers-statistieken.locked .overlay,
-  .advertentie-statistieken.locked .overlay {
-    display: flex;
-  }
   .review-statistieken .overlay,
   .bezoekers-statistieken .overlay,
   .advertentie-statistieken .overlay {
     display: none;
     position: absolute;
-    inset: 0;
-    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.97);
-    border-radius: 5px;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    border-radius: 5px;
   }
-  .review-statistieken .overlay .overlay-top,
-  .bezoekers-statistieken .overlay .overlay-top,
-  .advertentie-statistieken .overlay .overlay-top {
+  .review-statistieken.locked .overlay,
+  .bezoekers-statistieken.locked .overlay,
+  .advertentie-statistieken.locked .overlay {
+    display: flex;
+  }
+  .review-statistieken .overlay-top,
+  .bezoekers-statistieken .overlay-top,
+  .advertentie-statistieken .overlay-top {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
     margin-top: 100px;
   }
-  .review-statistieken .overlay .overlay-locked,
-  .bezoekers-statistieken .overlay .overlay-locked,
-  .advertentie-statistieken .overlay .overlay-locked {
+  .review-statistieken .overlay-locked,
+  .bezoekers-statistieken .overlay-locked,
+  .advertentie-statistieken .overlay-locked {
     font-size: 27px;
     color: #000;
     font-weight: 600;
     padding: 0 20px;
+  }
+  .overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #8FC936;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    z-index: 50;
+  }
+  .overlay.open {
+    height: 100vh;
   }
   .start-wrapper-popup {
     display: flex;
@@ -722,12 +769,26 @@ label {
   .pros ul li {
     list-style-image: url(/includes/media/plus-circle.svg);
   }
-  ul {
+  .lijst-voordelen-popup {
     list-style: circle;
   }
-  ul li {
+  .lijst-voordelen-popup li {
     margin-bottom: 10px;
     list-style-image: url(/includes/media/unlock.png);
+  }
+  .overlay-menu {
+    list-style: none;
+    padding: 0;
+  }
+  .overlay-menu li {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .overlay-menu a {
+    font-size: 27px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
   }
   .light-grey-line {
     border: 1px solid #f2f2f2;
@@ -830,6 +891,7 @@ header {
   margin: 15px 20px;
   max-width: 63%;
   z-index: 10;
+  padding: 10px 13px;
 }
 
 .button-lang-ad {
@@ -877,6 +939,28 @@ header {
   font-weight: 600;
   margin: 15px 20px;
   min-width: 93%;
+}
+
+.button-home {
+  background-color: #8FC936;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 600;
+  margin: 15px 20px;
+  width: 42%;
+  padding: 8px 12px;
+  background-color: #f23838;
+  margin-top: 5vw;
+  position: absolute;
+  right: 0;
+  top: 47vw;
 }
 
 .button-reageren {
@@ -962,7 +1046,7 @@ header {
   background-color: #fff;
   padding: 0 30px 30px;
   border-radius: 5px;
-  width: 75%;
+  width: 77%;
   max-height: 80vh;
   overflow-y: auto;
   position: relative;
@@ -1082,12 +1166,21 @@ label {
 
 .content-start {
   text-align: center;
-  margin: 50px 0;
+  margin: 0 0 70px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .blok-start {
   font-size: 27px;
   color: #000;
+  margin: 0;
+}
+
+.blok-start-extra {
+  font-size: 27px;
+  color: #f23838;
   margin: 0;
 }
 
@@ -1115,7 +1208,7 @@ label {
 .containers-underneath-small {
   display: flex;
   flex-wrap: wrap;
-  gap: 34px;
+  gap: 33px;
   margin: 0 5vw;
   justify-content: space-between;
 }
@@ -1370,42 +1463,61 @@ hr {
 .advertentie-statistieken {
   position: relative;
 }
-.review-statistieken.locked .overlay,
-.bezoekers-statistieken.locked .overlay,
-.advertentie-statistieken.locked .overlay {
-  display: flex;
-}
 .review-statistieken .overlay,
 .bezoekers-statistieken .overlay,
 .advertentie-statistieken .overlay {
   display: none;
   position: absolute;
-  inset: 0;
-  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(255, 255, 255, 0.97);
-  border-radius: 5px;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  border-radius: 5px;
 }
-.review-statistieken .overlay .overlay-top,
-.bezoekers-statistieken .overlay .overlay-top,
-.advertentie-statistieken .overlay .overlay-top {
+.review-statistieken.locked .overlay,
+.bezoekers-statistieken.locked .overlay,
+.advertentie-statistieken.locked .overlay {
+  display: flex;
+}
+.review-statistieken .overlay-top,
+.bezoekers-statistieken .overlay-top,
+.advertentie-statistieken .overlay-top {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
   margin-top: 100px;
 }
-.review-statistieken .overlay .overlay-locked,
-.bezoekers-statistieken .overlay .overlay-locked,
-.advertentie-statistieken .overlay .overlay-locked {
+.review-statistieken .overlay-locked,
+.bezoekers-statistieken .overlay-locked,
+.advertentie-statistieken .overlay-locked {
   font-size: 27px;
   color: #000;
   font-weight: 600;
   padding: 0 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #8FC936;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  z-index: 50;
+}
+
+.overlay.open {
+  height: 100vh;
 }
 
 .start-wrapper-popup {
@@ -1521,12 +1633,27 @@ label svg {
   list-style-image: url(/includes/media/plus-circle.svg);
 }
 
-ul {
+.lijst-voordelen-popup {
   list-style: circle;
 }
-ul li {
+.lijst-voordelen-popup li {
   margin-bottom: 10px;
   list-style-image: url(/includes/media/unlock.png);
+}
+
+.overlay-menu {
+  list-style: none;
+  padding: 0;
+}
+.overlay-menu li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.overlay-menu a {
+  font-size: 27px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
 }
 
 .light-grey-line {

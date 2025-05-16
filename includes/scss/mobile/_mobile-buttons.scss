@@ -1,25 +1,9 @@
-// ========== Basisstijl voor buttons ==========
-@mixin button-base {
-  background-color: $primary-color;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: $font-size-3;
-  color: #ffff;
-  cursor: pointer;
-  border-radius: 3px;
-  font-weight: 600;
-  margin: 15px 20px;
-}
-
-
 // ========== Taal-gerelateerde buttons ==========
 .button-lang {
   @include button-base;
   max-width: 63%;
   z-index: 10;
+  padding: 10px 13px;
 }
 
 .button-lang-ad {
@@ -34,6 +18,17 @@
 .button-lang-locked {
   @include button-base;
   min-width: 93%;
+}
+
+.button-home {
+  @include button-base;
+  width: 42%;
+  padding: 8px 12px;
+  background-color: $third-color;
+  margin-top: 5vw;
+  position: absolute;
+  right: 0;
+  top: 47vw;
 }
 
 

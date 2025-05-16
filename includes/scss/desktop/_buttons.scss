@@ -1,24 +1,8 @@
-// Basis button styling
-@mixin button-base {
-  background-color: $primary-color;
-  border: none;
-  padding: 10px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: $font-size-3;
-  color: #ffff;
-  cursor: pointer;
-  border-radius: 3px;
-  font-weight: 600;
-  margin: 15px 20px;
-}
-
 // Buttons gebaseerd op button-base
-
 .button-lang {
   @include button-base;
   max-width: 63%;
+  padding: 10px 13px;
 }
 
 .button-lang-ad {
@@ -47,13 +31,22 @@
 .button-reageren-popup {
   @include button-base;
   margin: 15px 0 0 0;
-  width: 13%;
+  width: 17%;
   padding: 8px 12px;
-  font-size: $font-size-3;
 }
 
-// Filter button met afwijkende styling
+.button-home {
+  @include button-base;
+  width: 12%;
+  padding: 8px 12px;
+  background-color: $third-color;
+  margin: 0;
+  position: absolute;
+  right: 7vw;
+}
 
+
+// Filter button met afwijkende styling
 .filter-button {
   background-color: $primary-color;
   border: none;

@@ -83,7 +83,7 @@ label {
   .button-lang {
     background-color: #8FC936;
     border: none;
-    padding: 10px 12px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -94,11 +94,12 @@ label {
     font-weight: 600;
     margin: 15px 20px;
     max-width: 63%;
+    padding: 10px 13px;
   }
   .button-lang-ad {
     background-color: #8FC936;
     border: none;
-    padding: 10px 12px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -113,7 +114,7 @@ label {
   .button-lang-alle-reviews {
     background-color: #8FC936;
     border: none;
-    padding: 10px 12px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -127,7 +128,7 @@ label {
   .button-lang-locked {
     background-color: #8FC936;
     border: none;
-    padding: 10px 12px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -142,7 +143,7 @@ label {
   .button-reageren {
     background-color: #8FC936;
     border: none;
-    padding: 10px 12px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -161,7 +162,7 @@ label {
   .button-reageren-popup {
     background-color: #8FC936;
     border: none;
-    padding: 10px 12px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -172,9 +173,28 @@ label {
     font-weight: 600;
     margin: 15px 20px;
     margin: 15px 0 0 0;
-    width: 13%;
+    width: 17%;
     padding: 8px 12px;
+  }
+  .button-home {
+    background-color: #8FC936;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 600;
+    margin: 15px 20px;
+    width: 12%;
+    padding: 8px 12px;
+    background-color: #f23838;
+    margin: 0;
+    position: absolute;
+    right: 7vw;
   }
   .filter-button {
     background-color: #8FC936;
@@ -400,12 +420,20 @@ label {
     justify-content: center;
   }
   .content-start {
-    text-align: center;
     margin: 50px 0;
+    padding: 0 8vw 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .blok-start {
     font-size: 27px;
     color: #000;
+    margin: 0;
+  }
+  .blok-start-extra {
+    font-size: 27px;
+    color: #f23838;
     margin: 0;
   }
   .container-first-row,
@@ -416,7 +444,7 @@ label {
     margin-bottom: 50px;
   }
   .container-second-row {
-    align-items: flex-start;
+    align-items: stretch;
   }
   .container-third-row {
     flex-direction: row;
@@ -512,6 +540,7 @@ label {
     flex-direction: column;
     justify-content: space-between;
     padding: 0 20px;
+    height: 100%;
   }
   .reviews-blok-top {
     display: flex;
@@ -523,6 +552,7 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
   }
   .statistieken-inhoud {
     display: flex;
@@ -693,7 +723,10 @@ label {
   .advertentie-statistieken .overlay {
     display: none;
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.97);
     z-index: 10;
     display: flex;
@@ -724,6 +757,23 @@ label {
     color: #000;
     font-weight: 600;
     padding: 0 100px;
+  }
+  .overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #8FC936;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    z-index: 50;
+  }
+  .overlay.open {
+    height: 100vh;
+  }
+  .content {
+    padding: 0 7vw 0 15vw;
   }
   .start-wrapper-popup {
     display: flex;
@@ -912,7 +962,7 @@ label {
 .button-lang {
   background-color: #8FC936;
   border: none;
-  padding: 10px 12px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -923,12 +973,13 @@ label {
   font-weight: 600;
   margin: 15px 20px;
   max-width: 63%;
+  padding: 10px 13px;
 }
 
 .button-lang-ad {
   background-color: #8FC936;
   border: none;
-  padding: 10px 12px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -944,7 +995,7 @@ label {
 .button-lang-alle-reviews {
   background-color: #8FC936;
   border: none;
-  padding: 10px 12px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -959,7 +1010,7 @@ label {
 .button-lang-locked {
   background-color: #8FC936;
   border: none;
-  padding: 10px 12px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -975,7 +1026,7 @@ label {
 .button-reageren {
   background-color: #8FC936;
   border: none;
-  padding: 10px 12px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -995,7 +1046,7 @@ label {
 .button-reageren-popup {
   background-color: #8FC936;
   border: none;
-  padding: 10px 12px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -1006,9 +1057,29 @@ label {
   font-weight: 600;
   margin: 15px 20px;
   margin: 15px 0 0 0;
-  width: 13%;
+  width: 17%;
   padding: 8px 12px;
+}
+
+.button-home {
+  background-color: #8FC936;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 15px;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 600;
+  margin: 15px 20px;
+  width: 12%;
+  padding: 8px 12px;
+  background-color: #f23838;
+  margin: 0;
+  position: absolute;
+  right: 7vw;
 }
 
 .filter-button {
@@ -1242,13 +1313,22 @@ label {
 }
 
 .content-start {
-  text-align: center;
   margin: 50px 0;
+  padding: 0 8vw 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .blok-start {
   font-size: 27px;
   color: #000;
+  margin: 0;
+}
+
+.blok-start-extra {
+  font-size: 27px;
+  color: #f23838;
   margin: 0;
 }
 
@@ -1261,7 +1341,7 @@ label {
 }
 
 .container-second-row {
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .container-third-row {
@@ -1370,6 +1450,7 @@ label {
   flex-direction: column;
   justify-content: space-between;
   padding: 0 20px;
+  height: 100%;
 }
 
 .reviews-blok-top {
@@ -1383,6 +1464,7 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 .statistieken-inhoud {
@@ -1581,7 +1663,10 @@ hr {
 .advertentie-statistieken .overlay {
   display: none;
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(255, 255, 255, 0.97);
   z-index: 10;
   display: flex;
@@ -1612,6 +1697,26 @@ hr {
   color: #000;
   font-weight: 600;
   padding: 0 100px;
+}
+
+.overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #8FC936;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  z-index: 50;
+}
+
+.overlay.open {
+  height: 100vh;
+}
+
+.content {
+  padding: 0 7vw 0 15vw;
 }
 
 .start-wrapper-popup {

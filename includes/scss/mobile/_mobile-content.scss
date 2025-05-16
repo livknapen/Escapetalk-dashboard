@@ -1,12 +1,21 @@
 // ========== 1. Pagina-structuur ==========
 .content-start {
   text-align: center;
-  margin: 50px 0;
+  margin: 0 0 70px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .blok-start {
   font-size: $font-size-1;
   color: #000;
+  margin: 0;
+}
+
+.blok-start-extra {
+  font-size: $font-size-1;
+  color: $third-color;
   margin: 0;
 }
 
@@ -34,7 +43,7 @@
 .containers-underneath-small {
   display: flex;
   flex-wrap: wrap;
-  gap: 34px;
+  gap: 33px;
   margin: 0 5vw;
   justify-content: space-between;
 }
@@ -164,10 +173,6 @@
 
 
 // ========== 5. Gebruiker, score, titels ==========
-%blok-basis {
-  color: #000;
-}
-
 .blok-username,
 .blok-username-popup,
 .blok-score,

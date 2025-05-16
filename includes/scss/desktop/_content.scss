@@ -1,12 +1,21 @@
 // ========== 1. Algemene Layout ==========
 .content-start {
-  text-align: center;
   margin: 50px 0;
+  padding: 0 8vw 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .blok-start {
   font-size: $font-size-1;
   color: #000;
+  margin: 0;
+}
+
+.blok-start-extra {
+  font-size: $font-size-1;
+  color: $third-color;
   margin: 0;
 }
 
@@ -19,7 +28,7 @@
 }
 
 .container-second-row {
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .container-third-row {
@@ -120,6 +129,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 0 20px;
+  height: 100%;
 }
 
 .reviews-blok-top {
@@ -133,6 +143,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 .statistieken-inhoud {
