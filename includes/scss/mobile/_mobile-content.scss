@@ -1,7 +1,7 @@
 // ========== 1. Pagina-structuur ==========
 .content-start {
   text-align: center;
-  margin: 0 0 70px 0;
+  margin: 0 0 4vw 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +16,7 @@
 .blok-start-extra {
   font-size: $font-size-1;
   color: $third-color;
-  margin: 0;
+  margin: 0 21px;
 }
 
 .container-first-row,
@@ -224,7 +224,8 @@
 
 .blok-review-kop,
 .blok-review-kop-popup,
-.blok-voordelen-kop-popup {
+.blok-voordelen-kop-popup,
+.blok-voordelen-kop-popup-plus {
   font-size: $font-size-2;
   font-weight: 500;
   margin-top: 16px;
@@ -237,6 +238,13 @@
 
 .blok-voordelen-kop-popup {
   text-align: center;
+  color: $primary-color;
+  font-size: $font-size-1;
+  margin: 16px -5px;
+}
+
+.blok-voordelen-kop-popup-plus {
+  text-align: start;
 }
 
 .blok-review-tekst {

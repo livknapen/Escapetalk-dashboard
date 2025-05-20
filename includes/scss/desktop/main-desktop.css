@@ -1,6 +1,10 @@
 @charset "UTF-8";
 strong {
-  font-weight: 500;
+  font-weight: 800;
+}
+
+.rood {
+  color: #f23838;
 }
 
 label {
@@ -93,7 +97,7 @@ label {
     border-radius: 3px;
     font-weight: 600;
     margin: 15px 20px;
-    max-width: 63%;
+    max-width: 66%;
     padding: 10px 13px;
   }
   .button-lang-ad {
@@ -189,7 +193,7 @@ label {
     border-radius: 3px;
     font-weight: 600;
     margin: 15px 20px;
-    width: 12%;
+    width: 10%;
     padding: 8px 12px;
     background-color: #f23838;
     margin: 0;
@@ -481,7 +485,7 @@ label {
     min-width: 30%;
   }
   .ranking {
-    min-width: 15%;
+    min-width: 20%;
   }
   .nieuwe-reviews {
     display: flex;
@@ -650,7 +654,8 @@ label {
   }
   .blok-review-kop,
   .blok-review-kop-popup,
-  .blok-voordelen-kop-popup {
+  .blok-voordelen-kop-popup,
+  .blok-voordelen-kop-popup-plus {
     font-size: 17px;
     font-weight: 500;
     margin-top: 16px;
@@ -660,6 +665,11 @@ label {
   }
   .blok-voordelen-kop-popup {
     text-align: center;
+  }
+  .blok-voordelen-kop-popup {
+    text-align: center;
+    color: #8FC936;
+    font-size: 27px;
   }
   .blok-review-tekst {
     font-size: 15px;
@@ -885,6 +895,20 @@ label {
   hr.hide {
     display: none;
   }
+  .overlay-menu {
+    list-style: none;
+    padding: 0;
+  }
+  .overlay-menu li {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .overlay-menu a {
+    font-size: 27px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+  }
   ul {
     list-style: circle;
   }
@@ -972,7 +996,7 @@ label {
   border-radius: 3px;
   font-weight: 600;
   margin: 15px 20px;
-  max-width: 63%;
+  max-width: 66%;
   padding: 10px 13px;
 }
 
@@ -1074,7 +1098,7 @@ label {
   border-radius: 3px;
   font-weight: 600;
   margin: 15px 20px;
-  width: 12%;
+  width: 10%;
   padding: 8px 12px;
   background-color: #f23838;
   margin: 0;
@@ -1385,7 +1409,7 @@ label {
 }
 
 .ranking {
-  min-width: 15%;
+  min-width: 20%;
 }
 
 .nieuwe-reviews {
@@ -1578,7 +1602,8 @@ label {
 
 .blok-review-kop,
 .blok-review-kop-popup,
-.blok-voordelen-kop-popup {
+.blok-voordelen-kop-popup,
+.blok-voordelen-kop-popup-plus {
   font-size: 17px;
   font-weight: 500;
   margin-top: 16px;
@@ -1590,6 +1615,12 @@ label {
 
 .blok-voordelen-kop-popup {
   text-align: center;
+}
+
+.blok-voordelen-kop-popup {
+  text-align: center;
+  color: #8FC936;
+  font-size: 27px;
 }
 
 .blok-review-tekst {
@@ -1844,6 +1875,21 @@ hr {
 }
 hr.hide {
   display: none;
+}
+
+.overlay-menu {
+  list-style: none;
+  padding: 0;
+}
+.overlay-menu li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.overlay-menu a {
+  font-size: 27px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
 }
 
 ul {

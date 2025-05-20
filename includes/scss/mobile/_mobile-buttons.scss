@@ -22,13 +22,10 @@
 
 .button-home {
   @include button-base;
-  width: 42%;
   padding: 8px 12px;
   background-color: $third-color;
-  margin-top: 5vw;
-  position: absolute;
-  right: 0;
-  top: 47vw;
+  margin-right: 5%;
+  align-self: flex-end;
 }
 
 

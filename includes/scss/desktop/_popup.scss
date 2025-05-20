@@ -141,7 +141,26 @@ hr {
 }
 
 
-// ========== 7. Algemene lijst-styling ==========
+// ========== 7. Dropdown menu lijst-styling ==========
+.overlay-menu {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  a {
+    font-size: $font-size-1;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+
+// ========== 8. Algemene lijst-styling ==========
 ul {
   list-style: circle;
 

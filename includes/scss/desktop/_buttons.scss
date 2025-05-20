@@ -1,7 +1,7 @@
 // Buttons gebaseerd op button-base
 .button-lang {
   @include button-base;
-  max-width: 63%;
+  max-width: 66%;
   padding: 10px 13px;
 }
 
@@ -37,7 +37,7 @@
 
 .button-home {
   @include button-base;
-  width: 12%;
+  width: 10%;
   padding: 8px 12px;
   background-color: $third-color;
   margin: 0;

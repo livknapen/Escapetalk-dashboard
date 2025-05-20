@@ -74,7 +74,7 @@
 }
 
 .ranking {
-  min-width: 15%;
+  min-width: 20%;
 }
 
 
@@ -260,7 +260,8 @@
 
 .blok-review-kop,
 .blok-review-kop-popup,
-.blok-voordelen-kop-popup {
+.blok-voordelen-kop-popup,
+.blok-voordelen-kop-popup-plus {
   font-size: $font-size-2;
   font-weight: 500;
   margin-top: 16px;
@@ -272,6 +273,12 @@
 
 .blok-voordelen-kop-popup {
   text-align: center;
+}
+
+.blok-voordelen-kop-popup {
+  text-align: center;
+  color: $primary-color;
+  font-size: $font-size-1;
 }
 
 .blok-review-tekst {
