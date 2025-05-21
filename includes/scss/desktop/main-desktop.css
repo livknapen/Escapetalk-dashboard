@@ -42,6 +42,13 @@ label {
     display: flex;
     height: 30px;
   }
+  .header .header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 86%;
+    justify-content: space-between;
+  }
   .menu-toggle {
     width: 30px;
     height: 20px;
@@ -634,12 +641,21 @@ label {
     margin: 0;
     text-align: start;
   }
-  .blok-score,
+  .blok-score {
+    font-weight: 500;
+    background-color: #0084f5;
+    color: white;
+    border-radius: 3px;
+    min-width: 25px;
+    text-align: center;
+  }
   .blok-score-popup {
     font-weight: 500;
     background-color: #0084f5;
     color: white;
     border-radius: 3px;
+    min-width: 35px;
+    text-align: center;
   }
   .blok-score {
     font-size: 17px;
@@ -662,9 +678,6 @@ label {
   }
   .blok-review-kop-popup {
     text-align: start;
-  }
-  .blok-voordelen-kop-popup {
-    text-align: center;
   }
   .blok-voordelen-kop-popup {
     text-align: center;
@@ -706,6 +719,17 @@ label {
     position: absolute;
     right: 0;
     bottom: 0;
+  }
+  .image-wrapper-pim-vriend {
+    position: absolute;
+    right: 3px;
+    bottom: -4px;
+  }
+  .pim-peeking {
+    width: 65px;
+  }
+  .pim-peeking-vriend {
+    width: 100px;
   }
   .image-wrapper-user {
     display: flex;
@@ -802,6 +826,19 @@ label {
     display: flex;
     flex-direction: row;
   }
+  .inhoud-popup-vergelijk-blok {
+    display: flex;
+    gap: 14vw;
+  }
+  .inhoud-popup-vergelijk-blok .inhoud-popup-vergelijk {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .lijst-voordelen-popup-locked {
+    margin: 0 38vw;
+  }
   .alle-inhoud-voordelen-popup {
     display: flex;
     justify-content: center;
@@ -882,6 +919,12 @@ label {
   .pros ul li {
     list-style-image: url(/includes/media/plus-circle.svg);
   }
+  .cons {
+    margin: 20px 0;
+  }
+  .cons ul li {
+    list-style-image: url(/includes/media/minus-circle.svg);
+  }
   .light-grey-line {
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
@@ -936,6 +979,13 @@ label {
 .header .mobile-logo {
   display: flex;
   height: 30px;
+}
+.header .header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 86%;
+  justify-content: space-between;
 }
 
 .menu-toggle {
@@ -1579,12 +1629,22 @@ label {
   text-align: start;
 }
 
-.blok-score,
+.blok-score {
+  font-weight: 500;
+  background-color: #0084f5;
+  color: white;
+  border-radius: 3px;
+  min-width: 25px;
+  text-align: center;
+}
+
 .blok-score-popup {
   font-weight: 500;
   background-color: #0084f5;
   color: white;
   border-radius: 3px;
+  min-width: 35px;
+  text-align: center;
 }
 
 .blok-score {
@@ -1611,10 +1671,6 @@ label {
 
 .blok-review-kop-popup {
   text-align: start;
-}
-
-.blok-voordelen-kop-popup {
-  text-align: center;
 }
 
 .blok-voordelen-kop-popup {
@@ -1662,6 +1718,20 @@ label {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.image-wrapper-pim-vriend {
+  position: absolute;
+  right: 3px;
+  bottom: -4px;
+}
+
+.pim-peeking {
+  width: 65px;
+}
+
+.pim-peeking-vriend {
+  width: 100px;
 }
 
 .image-wrapper-user {
@@ -1770,6 +1840,21 @@ hr {
   flex-direction: row;
 }
 
+.inhoud-popup-vergelijk-blok {
+  display: flex;
+  gap: 14vw;
+}
+.inhoud-popup-vergelijk-blok .inhoud-popup-vergelijk {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.lijst-voordelen-popup-locked {
+  margin: 0 38vw;
+}
+
 .alle-inhoud-voordelen-popup {
   display: flex;
   justify-content: center;
@@ -1860,6 +1945,13 @@ label svg {
 }
 .pros ul li {
   list-style-image: url(/includes/media/plus-circle.svg);
+}
+
+.cons {
+  margin: 20px 0;
+}
+.cons ul li {
+  list-style-image: url(/includes/media/minus-circle.svg);
 }
 
 .light-grey-line {

@@ -18,29 +18,30 @@
 <body>
     <header>
         <div class="header">
-            <div class="mobile-logo">
-                <img src="includes/media/mobile-logo.png" alt="Logo">
-            </div>
-            <h2 class="header-tekst">Dashboard</h2>
-            <div class="menu-toggle" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="overlay" id="overlay">
-                <div class="overlay-content">
-                    <nav class="overlay-nav">
-                        <ul class="overlay-menu">
-                            <li><a href="/index.html">Kennis</a></li>
-                            <li><a href="/vriend.html">Vriend</a></li>
-                            <li><a href="/berichten.html">Berichten</a></li>
-                            <li><a href="/reviews.html">Reviews</a></li>
-                            <li><a href="/facturen.html">Facturen</a></li>
-                        </ul>
-                    </nav>
+            <div class="header-content">
+                <div class="mobile-logo">
+                    <img src="includes/media/mobile-logo.png" alt="Logo">
+                </div>
+                <h2 class="header-tekst">Dashboard</h2>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="overlay" id="overlay">
+                    <div class="overlay-content">
+                        <nav class="overlay-nav">
+                            <ul class="overlay-menu">
+                                <li><a href="/index.html">Kennis</a></li>
+                                <li><a href="/vriend.html">Vriend</a></li>
+                                <li><a href="/berichten.html">Berichten</a></li>
+                                <li><a href="/reviews.html">Reviews</a></li>
+                                <li><a href="/facturen.html">Facturen</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
-            
         </div>
     </header>
 
@@ -216,7 +217,7 @@
             <div class="content-start">
                 <h1 class="blok-start">Welkom terug,&nbsp;</h1>
                 <h1 class="blok-start-extra">Leuke Escaperoom Naam23456</h1>
-                <button class="button-home">Escapetalk</button>
+                <button class="button-home" onclick="">Escapetalk</button>
             </div>
             <div class="container-first-row">
                 <div class="huidig-abonnement">
@@ -230,7 +231,7 @@
                             </div>
                             <div class="alle-inhoud-voordelen-popup">
                                 <div class="inhoud-popup">
-                                    <h2 class="blok-voordelen-kop-popup">Extra voordelen met een <strong>BFF</strong> abonnement</h2>
+                                    <h2 class="blok-voordelen-kop-popup">Extra voordelen als <strong>BFF</strong></h2>
                                     <h2 class="blok-voordelen-tekst-popup">
                                         <ul class="lijst-voordelen-popup">
                                             <h2 class="blok-voordelen-kop-popup-plus">Alle voordelen die je al hebt +</h2>
@@ -255,8 +256,180 @@
                             </div>
                         </div>
                     </div>
-                    <div class="image-wrapper-pim">
-                        <img src="/includes/media/pim-peeking-vriend.png" alt="Pim Peeking" class="pim-peeking">
+                    <div class="image-wrapper-pim-vriend">
+                        <svg id="peeking-pim" class="pim-peeking-vriend" data-name="peeking-pim" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 123.53 95.83">
+                            <defs>
+                                <clipPath id="f32d8e4f-229b-481e-951f-b366437a0a86">
+                                    <path d="M61.45 116.87c17.45 0 35.71-29 35.71-50s-16-38-35.71-38-35.7 17-35.7 38 18.25 50 35.7 50z"
+                                        fill="none"></path>
+                                </clipPath>
+                                <clipPath id="af33b7fe-dad6-4640-a41c-9e3f57444494">
+                                    <path fill="none" d="M-54.79-129.81h225.77V95.96H-54.79z"></path>
+                                </clipPath>
+                                <clipPath id="bde7a6a9-25d8-4947-b484-d9b1ab631cb4">
+                                    <path d="M61.72 28.87h-.27c-19.72 0-35.7 17-35.7 38s18.25 50 35.7 50h.27z" fill="none"></path>
+                                </clipPath>
+                                <clipPath id="fb33c4c6-a564-4c40-afc0-a0e42dc3a9fc">
+                                    <path
+                                        d="M84.69 17.41c13.87 16.86 11.65 26.53 11.65 26.53s3 14.35.54 24.15c0 0-2.76-18.9-8.6-21.39 0 0-30.29 11.46-57.25 1 0 0-5.71 17.09-4.88 22.06 0 0-11.24-27.72-5.68-42.36 0 0-5.13-15.46-1.87-22.24 0 0 8 9 16.6 9 0 0-6.11-6.9-4.17-13.81-.03-.07 39.79.2 53.66 17.06z"
+                                        fill="none"></path>
+                                </clipPath>
+                                <clipPath id="bbcc719b-94a4-44cb-8d86-858ae6d21614">
+                                    <path
+                                        d="M72.21 8.45a35.15 35.15 0 0116.27 20.93c-5.83-8-12-6.07-12-6.07 4.73.55 8.92 7.69 8.92 7.69-10.26 3.59-27.18 1.38-27.18 1.38 3.78 2.77 15 4.15 15 4.15-8.06.55-27.61-3-27.61-3 7.41 5.53 21.5 9.12 21.5 9.12C48.19 44.86 31 36.85 31 36.85c-7.53 8.45-5.31 29.76-5.06 32.88C25.63 64.34 31 48.08 31 48.08 57.92 58.58 88.48 47 88.48 47c5.84 2.49 8.42 22.27 8.42 22.27 2.87-7.35 3.52-35.28-11.45-52.06-3.38-4.09-10.78-7.95-13.24-8.76z"
+                                        fill="none"></path>
+                                </clipPath>
+                                <clipPath id="b73ef1f2-94bc-4f73-beb0-3bdbc9a59e93">
+                                    <path
+                                        d="M42.45 105.41c9.82 6.08 17.19 6.27 15.82-1.29a12.61 12.61 0 007.15 0s-2 6.19 3.52 5.77 24.88-15.33 27.73-37.31c0 0 .43 25.28-5.68 39.28S68.57 128.63 67.28 131a4.86 4.86 0 011.3-3.68s-6.86 2.76-8.34 7.18c0 0-2.93-3.32-2.39-7.37 0 0-2 3.13-1.37 4.79 0 0-19.77-9-26.26-22.11s-4.1-37.25-4.1-37.25 6.51 26.77 16.33 32.85z"
+                                        fill="none"></path>
+                                </clipPath>
+                                <clipPath id="b36c454c-f952-42d6-b979-cbce234c7243">
+                                    <path
+                                        d="M81.55 117.57a80 80 0 01-10.38 6.82 28.38 28.38 0 013.52-3.5s-10.52 2.21-13.87 7c0 0 .53-3.69 2.39-5.16 0 0-6.49-.55-8.71 5.16 0 0-19.08-8.48-24.64-18.06 6.48 13.09 26.25 22.11 26.25 22.11-.61-1.66 1.37-4.78 1.37-4.78-.53 4.05 2.39 7.36 2.39 7.36 1.48-4.42 8.34-7.18 8.34-7.18a4.86 4.86 0 00-1.3 3.68c1.3-2.4 17.6-5.15 23.71-19.15s5.83-38.61 5.83-38.61-.34 4.29-1.15 10c-1.3 9.19-3.8 22.13-8 27.45 0 0 .74-3.69.93-5.9-.01.05-1.5 8.71-6.68 12.76z"
+                                        fill="none"></path>
+                                </clipPath>
+                                <clipPath id="bf809652-a64e-4642-be69-d7ddc73999e4">
+                                    <path
+                                        d="M41.37 76.2c.68-4.17 3.41-7.29 6.67-7.29S54 72 54.7 76.2a8.21 8.21 0 00-6.7-3.9 8.21 8.21 0 00-6.63 3.9z"
+                                        fill="none"></path>
+                                </clipPath>
+                                <clipPath id="a7cda25b-cb61-4764-b5fa-80036e978d23">
+                                    <path
+                                        d="M51.65 87.27C52 93 56.41 97.5 61.75 97.5s9.92-4.72 10.12-10.62a21.88 21.88 0 01-10.48 2.58 22.19 22.19 0 01-9.74-2.19z"
+                                        fill="none"></path>
+                                </clipPath>
+                                <clipPath id="f6d92761-f220-47eb-b453-d1bb9fc95f2d">
+                                    <path d="M61.77 97.5h-.18c-5.34 0-9.72-4.51-10.1-10.24a22.06 22.06 0 009.74 2.2h.54z" fill="none"></path>
+                                </clipPath>
+                                <clipPath id="baa4904a-8a6a-49bc-9fe6-407999e9edda">
+                                    <path d="M68.51 76.2c.68-4.17 3.4-7.29 6.66-7.29s6 3.12 6.67 7.29a7.65 7.65 0 00-13.33 0z" fill="none">
+                                    </path>
+                                </clipPath>
+                                <clipPath id="ea9b2b3a-46f0-41ab-b8c7-56874e9971f2">
+                                    <path d="M8.7 103.9c4.87 0 8.82-3.55 8.82-7.93s-3.95-8-8.82-8S-.12 91.58-.12 96s3.95 7.9 8.82 7.9z"
+                                        fill="none"></path>
+                                </clipPath>
+                                <clipPath id="a45b456d-9fb0-4012-80b4-3e59fc8e178c">
+                                    <path d="M115 103.9c4.88 0 8.82-3.55 8.82-7.93s-4-8-8.82-8-8.81 3.55-8.81 7.93 3.91 8 8.81 8z" fill="none">
+                                    </path>
+                                </clipPath>
+                            </defs>
+                            <g id="abeab825-cc0b-469f-96cd-b1eb91a9e542" data-name="head" data-entrance="peek-up"
+                                style="transition: 1s; visibility: visible; opacity: 1; transform: translate(0px, 0px);">
+                                <g clip-path="url(#f32d8e4f-229b-481e-951f-b366437a0a86)">
+                                    <g clip-path="url(#af33b7fe-dad6-4640-a41c-9e3f57444494)" id="b9475ea3-cb5c-4ffa-b6dd-8bc039a25925"
+                                        data-name="Group 315">
+                                        <g id="ebfa5e9b-222d-4dce-9de7-3e3d42f1619a" data-name="Group 314">
+                                            <path id="bc468f1d-f30e-400d-8aeb-6246b2b4a513" data-name="Path 39"
+                                                d="M23.54 119.07h75.82v-92.4H23.54z" fill="#edc4b7"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#bde7a6a9-25d8-4947-b484-d9b1ab631cb4)">
+                                    <g clip-path="url(#af33b7fe-dad6-4640-a41c-9e3f57444494)" id="e24e4568-9859-485e-b257-bc791e2c5f20"
+                                        data-name="Group 317">
+                                        <g id="bd3115fa-020d-4912-a840-7605718af833" data-name="Group 316">
+                                            <path id="bdf95494-f3e9-4f8e-8716-4dfb4e06056a" data-name="Path 42"
+                                                d="M23.54 119.07h40.39v-92.4H23.54z" fill="#ffd8cd"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#fb33c4c6-a564-4c40-afc0-a0e42dc3a9fc)">
+                                    <g clip-path="url(#af33b7fe-dad6-4640-a41c-9e3f57444494)" id="f19bef35-f6ce-4e10-8cdf-484cd5596719"
+                                        data-name="Group 319">
+                                        <g id="b2925d5a-eedb-423e-9f80-f9e54bd0ac9c" data-name="Group 318">
+                                            <path id="a28a2f3d-5b5d-4f62-8c44-dfe04e4ea56e" data-name="Path 45"
+                                                d="M15.32 71.93h84.74V-1.93H15.32z" fill="#ca693a"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#bbcc719b-94a4-44cb-8d86-858ae6d21614)">
+                                    <g clip-path="url(#af33b7fe-dad6-4640-a41c-9e3f57444494)" id="a2a3411f-c7d0-41c5-b3cf-7e4971efa6a8"
+                                        data-name="Group 321">
+                                        <g id="a0157a93-f94b-4dd6-9eea-7b3ef7eedb2e" data-name="Group 320">
+                                            <path id="a1802f29-5f07-4b45-9a22-6f3968ed142b" data-name="Path 48" d="M23.2 71.93h77.54V6.24H23.2z"
+                                                fill="#a3552f"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#b73ef1f2-94bc-4f73-beb0-3bdbc9a59e93)">
+                                    <g clip-path="url(#af33b7fe-dad6-4640-a41c-9e3f57444494)" id="f83e7758-9d8b-426f-abfb-d2a14d230118"
+                                        data-name="Group 323">
+                                        <g id="fc80e9ed-8dac-4169-8bc4-75ab90278aa2" data-name="Group 322">
+                                            <path id="f40409ab-31b5-406f-b421-6f8fb8fe0a0a" data-name="Path 51"
+                                                d="M23.49 136.73h75.4V70.38h-75.4z" fill="#ca683a"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#b36c454c-f952-42d6-b979-cbce234c7243)">
+                                    <g clip-path="url(#af33b7fe-dad6-4640-a41c-9e3f57444494)" id="af0f1843-9c3f-4e7a-b2e6-5703dde3c2d7"
+                                        data-name="Group 325">
+                                        <g id="b297b7b7-2a16-4e8d-a56c-88f2f15e5a65" data-name="Group 324">
+                                            <path id="a675843e-9e59-4ba0-a0c1-85995a88c048" data-name="Path 54" d="M27.65 136.73h71V71.05h-71z"
+                                                fill="#a3542e"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#bf809652-a64e-4642-be69-d7ddc73999e4)">
+                                    <g clip-path="url(#af33b7fe-dad6-4640-a41c-9e3f57444494)" id="bcab949e-c60e-435c-b775-83dd707d010e"
+                                        data-name="Group 327">
+                                        <g id="a544fd62-ffde-4904-bb3c-a8848ea74c9a" data-name="Group 326">
+                                            <path id="a331a042-c003-419b-8c37-9cbc1595049c" data-name="Path 57"
+                                                d="M39.17 78.4h17.74V66.7H39.17z" fill="#333"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#a7cda25b-cb61-4764-b5fa-80036e978d23)">
+                                    <g clip-path="url(#af33b7fe-dad6-4640-a41c-9e3f57444494)" id="a8c2eafa-1596-4163-9d77-09e2deb41622"
+                                        data-name="Group 329">
+                                        <g id="f185a595-98d9-4bcb-9952-1f56cd9d1633" data-name="Group 328">
+                                            <path id="a65e47af-e4a1-4a62-a5e7-78c61fb962b7" data-name="Path 60"
+                                                d="M49.45 99.71h24.63v-15H49.45z" fill="#f1f1f1"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#f6d92761-f220-47eb-b453-d1bb9fc95f2d)">
+                                    <g clip-path="url(#af33b7fe-dad6-4640-a41c-9e3f57444494)" id="f1f3968f-7180-4cf5-94c7-2559741ada57"
+                                        data-name="Group 331">
+                                        <g id="e7e3fd39-f8d4-4c7e-9996-b1ef65ff20e7" data-name="Group 330">
+                                            <path id="adc3b999-1a9c-4b5c-a9fb-66f131183473" data-name="Path 63" d="M49.28 99.71H64V85.06H49.28z"
+                                                fill="#fff"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#baa4904a-8a6a-49bc-9fe6-407999e9edda)">
+                                    <g clip-path="url(#af33b7fe-dad6-4640-a41c-9e3f57444494)" id="ad8f7bb9-6989-4daf-811b-572c7d64f5c6"
+                                        data-name="Group 333">
+                                        <g id="b4cfeeb4-3735-4ad1-8d5d-c1ca3c3fc650" data-name="Group 332">
+                                            <path id="b90f0ad4-b774-4dcb-a6f9-38a3d8314185" data-name="Path 66" d="M66.3 78.4h17.75V66.7H66.3z"
+                                                fill="#333"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g clip-path="url(#ea9b2b3a-46f0-41ab-b8c7-56874e9971f2)" id="f9f47cdb-c43b-4cb8-bfc5-bd2dc31d220a"
+                                data-name="left hand">
+                                <g clip-path="url(#af33b7fe-dad6-4640-a41c-9e3f57444494)" id="ec286a27-4e28-4996-995f-35e247d0c0b3"
+                                    data-name="Group 335">
+                                    <g id="a5bc54b3-a0d7-49b5-8006-a9a5318bb57f" data-name="Group 334">
+                                        <path id="b84b30b5-33ab-4bf1-8c03-8dcb09a69296" data-name="Path 69" d="M-2.32 106.11h22.05V85.82h-22z"
+                                            fill="#ffd9cd"></path>
+                                    </g>
+                                </g>
+                            </g>
+                            <g clip-path="url(#a45b456d-9fb0-4012-80b4-3e59fc8e178c)" id="e94c03f0-ca40-4121-9784-d0401f96614e"
+                                data-name="right hand">
+                                <g clip-path="url(#af33b7fe-dad6-4640-a41c-9e3f57444494)" id="fedede98-20d7-4424-8dd3-1db4fd48d54f"
+                                    data-name="Group 337">
+                                    <g id="a3e68322-5dba-4653-be80-efcf9a0871fa" data-name="Group 336">
+                                        <path id="b829bc46-4398-48d2-be1f-f05746aa123e" data-name="Path 72" d="M104 106.11h22V85.82h-22z"
+                                            fill="#ffd9cd"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
                     </div>
                 </div>
                 <div class="aantal-credits">

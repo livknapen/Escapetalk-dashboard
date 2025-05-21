@@ -237,13 +237,24 @@
   text-align: start;
 }
 
-.blok-score,
+.blok-score {
+  font-weight: 500;
+  background-color: #0084f5;
+  color: white;
+  border-radius: 3px;
+  min-width: 25px;
+  text-align: center;
+}
+
 .blok-score-popup {
   font-weight: 500;
   background-color: #0084f5;
   color: white;
   border-radius: 3px;
+  min-width: 35px;
+  text-align: center;
 }
+
 
 .blok-score {
   font-size: $font-size-2;
@@ -269,10 +280,6 @@
 
 .blok-review-kop-popup {
   text-align: start;
-}
-
-.blok-voordelen-kop-popup {
-  text-align: center;
 }
 
 .blok-voordelen-kop-popup {
@@ -323,6 +330,20 @@
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.image-wrapper-pim-vriend {
+  position: absolute;
+  right: 3px;
+  bottom: -4px;
+}
+
+.pim-peeking {
+  width: 65px;
+}
+
+.pim-peeking-vriend {
+  width: 100px;
 }
 
 .image-wrapper-user {

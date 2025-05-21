@@ -45,6 +45,13 @@ label {
     display: flex;
     height: 30px;
   }
+  .header .header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 86%;
+    justify-content: space-between;
+  }
   .menu-toggle {
     width: 30px;
     height: 20px;
@@ -263,6 +270,7 @@ label {
     justify-content: flex-end;
     padding-top: 10px;
     z-index: 10;
+    margin: -3px;
   }
   .modal .close {
     font-size: 35px;
@@ -536,12 +544,21 @@ label {
     margin: 0;
     text-align: start;
   }
-  .blok-score,
-  .blok-score-popup {
+  .blok-score {
+    font-weight: 500;
     background-color: #0084f5;
     color: white;
-    font-weight: 500;
     border-radius: 3px;
+    min-width: 25px;
+    text-align: center;
+  }
+  .blok-score-popup {
+    font-weight: 500;
+    background-color: #0084f5;
+    color: white;
+    border-radius: 3px;
+    min-width: 35px;
+    text-align: center;
   }
   .blok-score {
     font-size: 17px;
@@ -570,7 +587,7 @@ label {
     text-align: center;
     color: #8FC936;
     font-size: 27px;
-    margin: 16px -5px;
+    margin: 16px;
   }
   .blok-voordelen-kop-popup-plus {
     text-align: start;
@@ -606,7 +623,20 @@ label {
   .image-wrapper-pim {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: -132px;
+    margin-top: -136px;
+  }
+  .image-wrapper-pim-vriend {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -79px;
+  }
+  .pim-peeking {
+    width: 65px;
+    margin-bottom: 5px;
+  }
+  .pim-peeking-vriend {
+    width: 100px;
+    margin-right: 5px;
   }
   .footer {
     text-align: center;
@@ -779,6 +809,7 @@ label {
   }
   .lijst-voordelen-popup {
     list-style: circle;
+    margin-bottom: 60px;
   }
   .lijst-voordelen-popup li {
     margin-bottom: 10px;
@@ -832,6 +863,13 @@ header {
 .header .mobile-logo {
   display: flex;
   height: 30px;
+}
+.header .header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 86%;
+  justify-content: space-between;
 }
 
 .menu-toggle {
@@ -1064,6 +1102,7 @@ header {
   justify-content: flex-end;
   padding-top: 10px;
   z-index: 10;
+  margin: -3px;
 }
 .modal .close {
   font-size: 35px;
@@ -1372,12 +1411,22 @@ label {
   text-align: start;
 }
 
-.blok-score,
-.blok-score-popup {
+.blok-score {
+  font-weight: 500;
   background-color: #0084f5;
   color: white;
-  font-weight: 500;
   border-radius: 3px;
+  min-width: 25px;
+  text-align: center;
+}
+
+.blok-score-popup {
+  font-weight: 500;
+  background-color: #0084f5;
+  color: white;
+  border-radius: 3px;
+  min-width: 35px;
+  text-align: center;
 }
 
 .blok-score {
@@ -1411,7 +1460,7 @@ label {
   text-align: center;
   color: #8FC936;
   font-size: 27px;
-  margin: 16px -5px;
+  margin: 16px;
 }
 
 .blok-voordelen-kop-popup-plus {
@@ -1452,7 +1501,23 @@ label {
 .image-wrapper-pim {
   display: flex;
   flex-direction: row-reverse;
-  margin-top: -132px;
+  margin-top: -136px;
+}
+
+.image-wrapper-pim-vriend {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: -79px;
+}
+
+.pim-peeking {
+  width: 65px;
+  margin-bottom: 5px;
+}
+
+.pim-peeking-vriend {
+  width: 100px;
+  margin-right: 5px;
 }
 
 .footer {
@@ -1648,6 +1713,7 @@ label svg {
 
 .lijst-voordelen-popup {
   list-style: circle;
+  margin-bottom: 60px;
 }
 .lijst-voordelen-popup li {
   margin-bottom: 10px;

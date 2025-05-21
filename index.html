@@ -18,29 +18,30 @@
 <body>
     <header>
         <div class="header">
-            <div class="mobile-logo">
-                <img src="includes/media/mobile-logo.png" alt="Logo">
-            </div>
-            <h2 class="header-tekst">Dashboard</h2>
-            <div class="menu-toggle" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="overlay" id="overlay">
-                <div class="overlay-content">
-                    <nav class="overlay-nav">
-                        <ul class="overlay-menu">
-                            <li><a href="/index.html">Kennis</a></li>
-                            <li><a href="/vriend.html">Vriend</a></li>
-                            <li><a href="/berichten.html">Berichten</a></li>
-                            <li><a href="/reviews.html">Reviews</a></li>
-                            <li><a href="/facturen.html">Facturen</a></li>
-                        </ul>
-                    </nav>
+            <div class="header-content">
+                <div class="mobile-logo">
+                    <img src="includes/media/mobile-logo.png" alt="Logo">
+                </div>
+                <h2 class="header-tekst">Dashboard</h2>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="overlay" id="overlay">
+                    <div class="overlay-content">
+                        <nav class="overlay-nav">
+                            <ul class="overlay-menu">
+                                <li><a href="/index.html">Kennis</a></li>
+                                <li><a href="/vriend.html">Vriend</a></li>
+                                <li><a href="/berichten.html">Berichten</a></li>
+                                <li><a href="/reviews.html">Reviews</a></li>
+                                <li><a href="/facturen.html">Facturen</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
-
         </div>
     </header>
 
@@ -216,14 +217,13 @@
             <div class="content-start">
                 <h1 class="blok-start">Welkom terug,&nbsp;</h1>
                 <h1 class="blok-start-extra">Leuke Escaperoom Naam1</h1>
-                <button class="button-home">Escapetalk</button>
+                <button class="button-home" onclick="">Escapetalk</button>
             </div>
             <div class="container-first-row">
                 <div class="huidig-abonnement">
                     <h2 class="blok-naam">Huidig abonnement</h2>
                     <h2 class="blok-inhoud">"Kennis"</h2>
-                    <button class="button-lang open-modal-btn" data-modal="modal-abbonement">Meer voordelen als
-                        Vriend</button>
+                    <button class="button-lang open-modal-btn" data-modal="modal-abbonement">Meer voordelen als Vriend</button>
                     <div class="modal popup-modal" id="modal-abbonement">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -231,8 +231,9 @@
                             </div>
                             <div class="alle-inhoud-voordelen-popup">
                                 <div class="inhoud-popup">
-                                    <h2 class="blok-voordelen-kop-popup">Extra voordelen met een <strong>Vriend</strong>
-                                        abonnement</h2>
+                                    <div class="inhoud-popup-vergelijk-blok">
+                                    <div class="inhoud-popup-vergelijk">
+                                    <h2 class="blok-voordelen-kop-popup">Extra voordelen als <strong>Vriend</strong></h2>
                                     <h2 class="blok-voordelen-tekst-popup">
                                         <ul class="lijst-voordelen-popup">
                                             <h2 class="blok-voordelen-kop-popup-plus">Alle voordelen die je al hebt +
@@ -261,6 +262,28 @@
                                             <li>Prio support</li>
                                             </ul>
                                     </h2>
+                                    </div>
+                                    <div class="inhoud-popup-vergelijk">
+                                    <h2 class="blok-voordelen-kop-popup">Extra voordelen als <strong>BFF</strong></h2>
+                                    <h2 class="blok-voordelen-tekst-popup">
+                                        <ul class="lijst-voordelen-popup">
+                                            <h2 class="blok-voordelen-kop-popup-plus">Alles van Vriend +</h2>
+                                            <li>Doorzetten leads</li>
+                                            <li>Custom bedankt melding na plaatsing review <span class="rood">[nieuw]</span></li>
+                                            <li>10% korting op credits</li>
+                                            <li>Pending/confirmed reviews inzien en spoilers markeren <span class="rood">[nieuw]</span></li>
+                                            <li>Uitlichten op (niet ingelogde) homepage <span class="rood">[nieuw]</span></li>
+                                            <li>Uitlichten in provincie / steden pagina’s <span class="rood">[nieuw]</span></li>
+                                            <li>Notificatie naar volgers dat er een nieuwe kamer is geopend <span class="rood">[nieuw]</span></li>
+                                            <li>Berichtjes naar mensen die je locatie / kamer volgen / gespeeld hebben / gereviewed hebben <span class="rood">[nieuw]</span></li>
+                                            <li>Deals pushen <span class="rood">[nieuw]</span></li>
+                                            <li>Uitlichten van reacties op last-minute requests van bezoekers <span class="rood">[nieuw]</span></li>
+                                            <li>Externe awards / prijzen tonen <span class="rood">[nieuw]</span></li>
+                                            <li>Uitgelicht op homepage voor niet ingelogde gebruikers <span class="rood">[nieuw]</span></li>
+                                        </ul>
+                                    </h2>
+                                    </div>
+                                    </div>
                                     <div class="button-reageren-wrapper-popup">
                                         <button class="button-reageren-popup">Upgraden</button>
                                     </div>
@@ -269,7 +292,7 @@
                         </div>
                     </div>
                     <div class="image-wrapper-pim">
-                        <img src="/includes/media/pim-peeking-kennis.png" alt="Pim Peeking" class="pim-peeking">
+                        <img src="/includes/media/pim-peeking-kennis.svg" alt="Pim Peeking" class="pim-peeking">
                     </div>
                 </div>
                 <div class="aantal-credits">
@@ -435,18 +458,18 @@
                             <div class="reviews-blok-top">
                                 <h2 class="blok-username">Dit is een hele super lange username die een speler kan gaan
                                     gebruiken</h2>
-                                <h2 class="blok-score">8.5</h2>
+                                <h2 class="blok-score">4</h2>
                             </div>
                             <div class="blok-hele-review">
-                                <h2 class="blok-review-kop">"Top ervaring!"</h2>
-                                <h2 class="blok-review-tekst">“We kwamen aan in de escape room en werden gelijk fijn
-                                    ontvangen met een drankje en de spelregels. We zijn direct begonnen met de room.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                                <h2 class="blok-review-kop">"Kleine krappe escaperoom."</h2>
+                                <h2 class="blok-review-tekst">“De ontvangst was slecht, de kamer was niet goed
+                                    onderhouden en de puzzels waren niet logisch. We hebben ons niet vermaakt en
+                                    zijn eerder weggegaan. Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                                     aliqua.</h2>
                             </div>
                             <div class="blok-button-reageren">
-                                <h2 class="blok-review-datum">Geplaatst op 19 maart</h2>
+                                <h2 class="blok-review-datum">Geplaatst op 27 februari</h2>
                                 <button class="button-reageren open-modal-btn"
                                     data-modal="modal-review2">Reageren</button>
                                 <div class="modal popup-modal" id="modal-review2">
@@ -464,15 +487,14 @@
                                                     <div class="user-info-popup">
                                                         <h2 class="blok-username-popup">Dit is een hele super lange
                                                             username die een speler kan gaan gebruiken</h2>
-                                                        <h2 class="blok-review-datum-popup">Geplaatst op: 19 maart 2025
+                                                        <h2 class="blok-review-datum-popup">Geplaatst op: 27 februari 2025
                                                         </h2>
                                                     </div>
                                                 </div>
-                                                <h2 class="blok-review-kop-popup">Top ervaring!</h2>
-                                                <h2 class="blok-review-tekst-popup">We kwamen aan in de escape room en
-                                                    werden gelijk fijn
-                                                    ontvangen met een drankje en de spelregels. We zijn direct begonnen
-                                                    met de room. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                <h2 class="blok-review-kop-popup">Kleine krappe escaperoom.</h2>
+                                                <h2 class="blok-review-tekst-popup">De ontvangst was slecht, de kamer was niet goed
+                                                    onderhouden en de puzzels waren niet logisch. We hebben ons niet vermaakt en
+                                                    zijn eerder weggegaan. Lorem ipsum dolor sit amet, consectetur adipiscing
                                                     elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                                                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -484,11 +506,11 @@
                                             <div class="blok-wrapper-score-popup">
                                                 <hr class="light-grey-line divider-20 hide">
                                                 <div class="blok-score-wrapper-popup">
-                                                    <h2 class="blok-score-popup">8.5</h2>
+                                                    <h2 class="blok-score-popup">4</h2>
                                                     <div class="blok-score-extra-popup">
-                                                        <h2 class="blok-score-extra-popup-tekst">Sfeer: 10.0</h2>
-                                                        <h2 class="blok-score-extra-popup-tekst">Spelbeleving: 8.0</h2>
-                                                        <h2 class="blok-score-extra-popup-tekst">Service: 8.0</h2>
+                                                        <h2 class="blok-score-extra-popup-tekst">Sfeer: 4.0</h2>
+                                                        <h2 class="blok-score-extra-popup-tekst">Spelbeleving: 5.0</h2>
+                                                        <h2 class="blok-score-extra-popup-tekst">Service: 5.0</h2>
                                                     </div>
                                                 </div>
                                                 <hr class="light-grey-line divider-20">
@@ -502,7 +524,7 @@
                                                             <path fill="currentColor"
                                                                 d="M160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32zM0 192H448V464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192zM64 304C64 312.8 71.16 320 80 320H112C120.8 320 128 312.8 128 304V272C128 263.2 120.8 256 112 256H80C71.16 256 64 263.2 64 272V304zM192 304C192 312.8 199.2 320 208 320H240C248.8 320 256 312.8 256 304V272C256 263.2 248.8 256 240 256H208C199.2 256 192 263.2 192 272V304zM336 256C327.2 256 320 263.2 320 272V304C320 312.8 327.2 320 336 320H368C376.8 320 384 312.8 384 304V272C384 263.2 376.8 256 368 256H336zM64 432C64 440.8 71.16 448 80 448H112C120.8 448 128 440.8 128 432V400C128 391.2 120.8 384 112 384H80C71.16 384 64 391.2 64 400V432zM208 384C199.2 384 192 391.2 192 400V432C192 440.8 199.2 448 208 448H240C248.8 448 256 440.8 256 432V400C256 391.2 248.8 384 240 384H208zM320 432C320 440.8 327.2 448 336 448H368C376.8 448 384 440.8 384 432V400C384 391.2 376.8 384 368 384H336C327.2 384 320 391.2 320 400V432z">
                                                             </path>
-                                                        </svg>Gespeeld in maart 2025
+                                                        </svg>Gespeeld in februari 2025
                                                     </p>
                                                     <p class="label label-tGrey">
                                                         <svg class="svg-inline--fa fa-users" aria-hidden="true"
@@ -512,7 +534,7 @@
                                                             <path fill="currentColor"
                                                                 d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
                                                             </path>
-                                                        </svg>Gespeeld met 2 personen
+                                                        </svg>Gespeeld met 4 personen
                                                     </p>
                                                     <p class="label label-tGrey">
                                                         <svg class="svg-inline--fa fa-unlock-keyhole" aria-hidden="true"
@@ -523,15 +545,20 @@
                                                             <path fill="currentColor"
                                                                 d="M224 64C179.8 64 144 99.82 144 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80V144C80 64.47 144.5 0 224 0C281.5 0 331 33.69 354.1 82.27C361.7 98.23 354.9 117.3 338.1 124.9C322.1 132.5 303.9 125.7 296.3 109.7C283.4 82.63 255.9 64 224 64H224zM256 384C273.7 384 288 369.7 288 352C288 334.3 273.7 320 256 320H192C174.3 320 160 334.3 160 352C160 369.7 174.3 384 192 384H256z">
                                                             </path>
-                                                        </svg>Ontsnapt: Ja
+                                                        </svg>Ontsnapt: Nee
                                                     </p>
                                                 </div>
                                                 <hr class="light-grey-line divider-20">
                                                 <div class="procon">
                                                     <div class="pros">
                                                         <ul>
-                                                            <li>Sfeer</li>
                                                         </ul>
+                                                        <div class="cons">
+                                                            <ul>
+                                                                <li>Slechte service</li>
+                                                                <li>Te warm</li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
 
@@ -968,7 +995,7 @@
                                         <h2 class="blok-voordelen-kop-popup">Deze statistieken zijn alleen beschikbaar
                                             voor <strong>Vriend</strong> en <strong>BFF</strong></h2>
                                         <h2 class="blok-voordelen-tekst-popup">
-                                            <ul class="lijst-voordelen-popup">
+                                            <ul class="lijst-voordelen-popup-locked">
                                                 <li>Review statistieken</li>
                                                 <li>Bezoekersstatistieken</li>
                                                 <li>Advertentie statistieken</li>
