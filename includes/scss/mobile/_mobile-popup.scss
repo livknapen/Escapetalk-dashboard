@@ -135,6 +135,14 @@ label {
   }
 }
 
+  .cons {
+  margin: 20px 0;
+
+  ul li {
+    list-style-image: url(/includes/media/minus-circle.svg);
+  }
+}
+
 
 // ========== 7. Dropdown menu lijst-styling ==========
 .overlay-menu {

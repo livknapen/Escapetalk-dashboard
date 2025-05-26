@@ -394,6 +394,9 @@ label {
   .container-first-row {
     justify-content: space-between;
   }
+  .container-third-row {
+    margin-bottom: 50px;
+  }
   .containers-underneath {
     display: flex;
     flex-direction: column;
@@ -638,8 +641,15 @@ label {
     width: 100px;
     margin-right: 5px;
   }
-  .footer {
+  .blok-footer {
     text-align: center;
+    background-color: #333;
+    padding: 32px 0;
+  }
+  .footer {
+    font-size: 15px;
+    margin: 0;
+    color: #f2f2f2;
   }
   .light-grey-line {
     border: 1px solid #f2f2f2;
@@ -814,6 +824,12 @@ label {
   .lijst-voordelen-popup li {
     margin-bottom: 10px;
     list-style-image: url(/includes/media/unlock.png);
+  }
+  .cons {
+    margin: 20px 0;
+  }
+  .cons ul li {
+    list-style-image: url(/includes/media/minus-circle.svg);
   }
   .overlay-menu {
     list-style: none;
@@ -1241,6 +1257,10 @@ label {
   justify-content: space-between;
 }
 
+.container-third-row {
+  margin-bottom: 50px;
+}
+
 .containers-underneath {
   display: flex;
   flex-direction: column;
@@ -1520,8 +1540,16 @@ label {
   margin-right: 5px;
 }
 
-.footer {
+.blok-footer {
   text-align: center;
+  background-color: #333;
+  padding: 32px 0;
+}
+
+.footer {
+  font-size: 15px;
+  margin: 0;
+  color: #f2f2f2;
 }
 
 .light-grey-line {
@@ -1718,6 +1746,13 @@ label svg {
 .lijst-voordelen-popup li {
   margin-bottom: 10px;
   list-style-image: url(/includes/media/unlock.png);
+}
+
+.cons {
+  margin: 20px 0;
+}
+.cons ul li {
+  list-style-image: url(/includes/media/minus-circle.svg);
 }
 
 .overlay-menu {

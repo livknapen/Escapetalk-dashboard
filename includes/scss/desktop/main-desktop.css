@@ -459,6 +459,7 @@ label {
   }
   .container-third-row {
     flex-direction: row;
+    margin-bottom: 100px;
   }
   .containers-underneath {
     display: flex;
@@ -734,8 +735,15 @@ label {
   .image-wrapper-user {
     display: flex;
   }
-  .footer {
+  .blok-footer {
     text-align: center;
+    background-color: #333;
+    padding: 32px 0;
+  }
+  .footer {
+    font-size: 15px;
+    margin: 0;
+    color: #f2f2f2;
   }
   .light-grey-line {
     border: 1px solid #f2f2f2;
@@ -837,7 +845,7 @@ label {
     box-sizing: border-box;
   }
   .lijst-voordelen-popup-locked {
-    margin: 0 38vw;
+    margin: 0 37vw;
   }
   .alle-inhoud-voordelen-popup {
     display: flex;
@@ -1420,6 +1428,7 @@ label {
 
 .container-third-row {
   flex-direction: row;
+  margin-bottom: 100px;
 }
 
 .containers-underneath {
@@ -1738,8 +1747,16 @@ label {
   display: flex;
 }
 
-.footer {
+.blok-footer {
   text-align: center;
+  background-color: #333;
+  padding: 32px 0;
+}
+
+.footer {
+  font-size: 15px;
+  margin: 0;
+  color: #f2f2f2;
 }
 
 .light-grey-line {
@@ -1852,7 +1869,7 @@ hr {
 }
 
 .lijst-voordelen-popup-locked {
-  margin: 0 38vw;
+  margin: 0 37vw;
 }
 
 .alle-inhoud-voordelen-popup {
