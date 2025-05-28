@@ -338,8 +338,8 @@ label {
   }
   .sidebar ul li a svg {
     flex-shrink: 0;
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     fill: #000;
     margin-right: 16px;
     min-width: 60px;
@@ -739,6 +739,8 @@ label {
     text-align: center;
     background-color: #333;
     padding: 32px 0;
+    position: relative;
+    z-index: 10;
   }
   .footer {
     font-size: 15px;
@@ -1298,8 +1300,8 @@ body.modal-open {
 }
 .sidebar ul li a svg {
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   fill: #000;
   margin-right: 16px;
   min-width: 60px;
@@ -1751,6 +1753,8 @@ label {
   text-align: center;
   background-color: #333;
   padding: 32px 0;
+  position: relative;
+  z-index: 10;
 }
 
 .footer {
