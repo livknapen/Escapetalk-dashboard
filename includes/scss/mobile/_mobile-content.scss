@@ -192,8 +192,8 @@
 }
 
 .blok-username {
-  font-size: $font-size-4;
-  font-weight: 200;
+  font-size: $font-size-3;
+  font-weight: 500;
   margin-top: 16px;
 }
 
@@ -290,7 +290,7 @@
 
 .blok-button-reageren {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 

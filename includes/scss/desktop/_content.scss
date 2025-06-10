@@ -24,7 +24,6 @@
 .container-third-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
 }
 
 .container-second-row {
@@ -47,7 +46,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 34px;
-  margin-left: 9vw;
+  margin-left: 13vw;
   justify-content: space-between;
 }
 
@@ -166,6 +165,7 @@
   font-size: $font-size-2;
   margin-bottom: -5px;
   margin-right: 10px;
+  z-index: 10;
 }
 
 .blok-inhoud {
@@ -225,8 +225,8 @@
 }
 
 .blok-username {
-  font-size: $font-size-4;
-  font-weight: 200;
+  font-size: $font-size-3;
+  font-weight: 500;
   margin-top: 16px;
 }
 
@@ -322,7 +322,7 @@
 
 .blok-button-reageren {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 

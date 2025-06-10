@@ -39,8 +39,8 @@ window.onload = function () {
   // Data voor aantal kliks
   const adWeekLabels = ["Ad1", "Ad2"];
   const adUitleg = {
-    Ad1: "ad1: deze advertentie is voor de zomer",
-    Ad2: "ad2: deze advertentie is voor de winter",
+    Ad1: "Ad1: deze advertentie is voor de zomer",
+    Ad2: "Ad2: deze advertentie is voor de winter",
   };
   const adAantalKliks = [76, 103];
 

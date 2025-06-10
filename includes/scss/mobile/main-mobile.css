@@ -536,8 +536,8 @@ label {
     color: #000;
   }
   .blok-username {
-    font-size: 12px;
-    font-weight: 200;
+    font-size: 15px;
+    font-weight: 500;
     margin-top: 16px;
   }
   .blok-username-popup {
@@ -621,7 +621,7 @@ label {
   }
   .blok-button-reageren {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   .image-wrapper-pim {
     display: flex;
@@ -1418,8 +1418,8 @@ label {
 }
 
 .blok-username {
-  font-size: 12px;
-  font-weight: 200;
+  font-size: 15px;
+  font-weight: 500;
   margin-top: 16px;
 }
 
@@ -1515,7 +1515,7 @@ label {
 
 .blok-button-reageren {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .image-wrapper-pim {

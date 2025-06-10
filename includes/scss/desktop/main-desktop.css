@@ -20,7 +20,7 @@ label {
     margin: 0;
   }
   header {
-    padding-bottom: 140px;
+    padding-bottom: 100px;
   }
   .header {
     background-color: #8FC936;
@@ -48,6 +48,8 @@ label {
     align-items: center;
     width: 86%;
     justify-content: space-between;
+    margin-left: 12vw;
+    margin-right: 5vw;
   }
   .menu-toggle {
     width: 30px;
@@ -183,8 +185,8 @@ label {
     border-radius: 3px;
     font-weight: 600;
     margin: 15px 20px;
-    margin: 15px 0 0 0;
-    width: 17%;
+    margin: 0;
+    width: 25%;
     padding: 8px 12px;
   }
   .button-home {
@@ -205,7 +207,7 @@ label {
     background-color: #f23838;
     margin: 0;
     position: absolute;
-    right: 7vw;
+    right: 5vw;
   }
   .filter-button {
     background-color: #8FC936;
@@ -452,7 +454,6 @@ label {
   .container-third-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
   }
   .container-second-row {
     align-items: stretch;
@@ -471,7 +472,7 @@ label {
     display: flex;
     flex-wrap: wrap;
     gap: 34px;
-    margin-left: 9vw;
+    margin-left: 13vw;
     justify-content: space-between;
   }
   .huidig-abonnement,
@@ -582,6 +583,7 @@ label {
     font-size: 17px;
     margin-bottom: -5px;
     margin-right: 10px;
+    z-index: 10;
   }
   .blok-inhoud {
     font-size: 27px;
@@ -631,8 +633,8 @@ label {
     color: #000;
   }
   .blok-username {
-    font-size: 12px;
-    font-weight: 200;
+    font-size: 15px;
+    font-weight: 500;
     margin-top: 16px;
   }
   .blok-username-popup {
@@ -714,7 +716,7 @@ label {
   }
   .blok-button-reageren {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   .image-wrapper-pim {
     position: absolute;
@@ -771,7 +773,7 @@ label {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -817,7 +819,7 @@ label {
     height: 100vh;
   }
   .content {
-    padding: 0 7vw 0 15vw;
+    padding: 0 5vw 0 11vw;
   }
   .start-wrapper-popup {
     display: flex;
@@ -996,6 +998,8 @@ label {
   align-items: center;
   width: 86%;
   justify-content: space-between;
+  margin-left: 12vw;
+  margin-right: 5vw;
 }
 
 .menu-toggle {
@@ -1140,8 +1144,8 @@ label {
   border-radius: 3px;
   font-weight: 600;
   margin: 15px 20px;
-  margin: 15px 0 0 0;
-  width: 17%;
+  margin: 0;
+  width: 25%;
   padding: 8px 12px;
 }
 
@@ -1163,7 +1167,7 @@ label {
   background-color: #f23838;
   margin: 0;
   position: absolute;
-  right: 7vw;
+  right: 5vw;
 }
 
 .filter-button {
@@ -1421,7 +1425,6 @@ label {
 .container-third-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
 }
 
 .container-second-row {
@@ -1444,7 +1447,7 @@ label {
   display: flex;
   flex-wrap: wrap;
   gap: 34px;
-  margin-left: 9vw;
+  margin-left: 13vw;
   justify-content: space-between;
 }
 
@@ -1570,6 +1573,7 @@ label {
   font-size: 17px;
   margin-bottom: -5px;
   margin-right: 10px;
+  z-index: 10;
 }
 
 .blok-inhoud {
@@ -1627,8 +1631,8 @@ label {
 }
 
 .blok-username {
-  font-size: 12px;
-  font-weight: 200;
+  font-size: 15px;
+  font-weight: 500;
   margin-top: 16px;
 }
 
@@ -1722,7 +1726,7 @@ label {
 
 .blok-button-reageren {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .image-wrapper-pim {
@@ -1789,7 +1793,7 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -1838,7 +1842,7 @@ hr {
 }
 
 .content {
-  padding: 0 7vw 0 15vw;
+  padding: 0 5vw 0 11vw;
 }
 
 .start-wrapper-popup {

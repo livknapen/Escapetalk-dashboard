@@ -36,7 +36,12 @@
                                 <li><a href="/vriend.html">Vriend</a></li>
                                 <li><a href="/berichten.html">Berichten</a></li>
                                 <li><a href="/reviews.html">Reviews</a></li>
+                                <li><a href="/Promotie.html">Promotie</a></li>
+                                <li><a href="/Abonnementen.html">Abonnementen</a></li>
+                                <li><a href="/Instellingen.html">Instellingen</a></li>
                                 <li><a href="/facturen.html">Facturen</a></li>
+
+                                <li><a href="/Uitloggen.html">Uitloggen</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -198,11 +203,11 @@
             <div class="content-start">
                 <h1 class="blok-start">Welkom terug,&nbsp;</h1>
                 <h1 class="blok-start-extra">Leuke Escaperoom Naam1</h1>
-                <button class="button-home" onclick="">Escapetalk</button>
+                <button class="button-home" onclick="">Homepage</button>
             </div>
             <div class="container-first-row">
                 <div class="huidig-abonnement">
-                    <h2 class="blok-naam">Huidig abonnement</h2>
+                    <h2 class="blok-naam">Huidig account</h2>
                     <h2 class="blok-inhoud">"Kennis"</h2>
                     <button class="button-lang open-modal-btn" data-modal="modal-abbonement">Meer voordelen als Vriend</button>
                     <div class="modal popup-modal" id="modal-abbonement">
@@ -213,9 +218,9 @@
                             <div class="alle-inhoud-voordelen-popup">
                                 <div class="inhoud-popup">
                                     <div class="inhoud-popup-vergelijk-blok">
-                                    <div class="inhoud-popup-vergelijk">
-                                    <h2 class="blok-voordelen-kop-popup">Extra voordelen als <strong>Vriend</strong></h2>
-                                    <h2 class="blok-voordelen-tekst-popup">
+                                        <div class="inhoud-popup-vergelijk">
+                                            <h2 class="blok-voordelen-kop-popup">Extra voordelen als <strong>Vriend</strong></h2>
+                                            <h2 class="blok-voordelen-tekst-popup">
                                         <ul class="lijst-voordelen-popup">
                                             <h2 class="blok-voordelen-kop-popup-plus">Alle voordelen die je al hebt +
                                             </h2>
@@ -242,11 +247,14 @@
                                             <li>Kopieer prijzen van kamer X naar kamer Y <span class="rood">[nieuw]</span></li>
                                             <li>Prio support</li>
                                             </ul>
-                                    </h2>
-                                    </div>
-                                    <div class="inhoud-popup-vergelijk">
-                                    <h2 class="blok-voordelen-kop-popup">Extra voordelen als <strong>BFF</strong></h2>
-                                    <h2 class="blok-voordelen-tekst-popup">
+                                            </h2>
+                                            <div class="button-reageren-wrapper-popup">
+                                                <button class="button-reageren-popup">Upgraden</button>
+                                            </div>
+                                        </div>
+                                        <div class="inhoud-popup-vergelijk">
+                                            <h2 class="blok-voordelen-kop-popup">Extra voordelen als <strong>BFF</strong></h2>
+                                            <h2 class="blok-voordelen-tekst-popup">
                                         <ul class="lijst-voordelen-popup">
                                             <h2 class="blok-voordelen-kop-popup-plus">Alles van Vriend +</h2>
                                             <li>Doorzetten leads</li>
@@ -262,11 +270,11 @@
                                             <li>Externe awards / prijzen tonen <span class="rood">[nieuw]</span></li>
                                             <li>Uitgelicht op homepage voor niet ingelogde gebruikers <span class="rood">[nieuw]</span></li>
                                         </ul>
-                                    </h2>
-                                    </div>
-                                    </div>
-                                    <div class="button-reageren-wrapper-popup">
-                                        <button class="button-reageren-popup">Upgraden</button>
+                                            </h2>
+                                            <div class="button-reageren-wrapper-popup">
+                                                <button class="button-reageren-popup">Upgraden</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -295,8 +303,10 @@
                     <div class="reviews-blok">
                         <div class="reviews-inhoud">
                             <div class="reviews-blok-top">
-                                <h2 class="blok-username">Dit is een hele super lange username die een speler kan gaan
-                                    gebruiken</h2>
+                                <div class="reviews-blok-top-begin">
+                                    <h2 class="blok-username">Dit is een hele lange username</h2>
+                                    <h2 class="blok-review-datum" data-datum="2025-03-19">Geplaatst op 19 maart</h2>
+                                </div>
                                 <h2 class="blok-score">8.5</h2>
                             </div>
                             <div class="blok-hele-review">
@@ -309,7 +319,6 @@
                                 </h2>
                             </div>
                             <div class="blok-button-reageren">
-                                <h2 class="blok-review-datum" data-datum="2025-03-19">Geplaatst op 19 maart</h2>
                                 <button class="button-reageren open-modal-btn" data-modal="modal-review1">Reageren</button>
                                 <div class="modal popup-modal" id="modal-review1">
                                     <div class="modal-content">
@@ -324,8 +333,7 @@
                                                             class="user-image">
                                                     </div>
                                                     <div class="user-info-popup">
-                                                        <h2 class="blok-username-popup">Dit is een hele super lange
-                                                            username die een speler kan gaan gebruiken</h2>
+                                                        <h2 class="blok-username-popup">Dit is een hele lange username</h2>
                                                         <h2 class="blok-review-datum-popup">Geplaatst op: 19 maart 2025
                                                         </h2>
                                                     </div>
@@ -433,8 +441,10 @@
                         </div>
                         <div class="reviews-inhoud">
                             <div class="reviews-blok-top">
-                                <h2 class="blok-username">Dit is een hele super lange username die een speler kan gaan
-                                    gebruiken</h2>
+                                <div class="reviews-blok-top-begin">
+                                    <h2 class="blok-username">Dit is een hele lange username</h2>
+                                    <h2 class="blok-review-datum" data-datum="2025-02-27">Geplaatst op 27 februari</h2>
+                                </div>
                                 <h2 class="blok-score">4</h2>
                             </div>
                             <div class="blok-hele-review">
@@ -446,7 +456,6 @@
                                     aliqua.</h2>
                             </div>
                             <div class="blok-button-reageren">
-                                <h2 class="blok-review-datum" data-datum="2025-02-27">Geplaatst op 27 februari</h2>
                                 <button class="button-reageren open-modal-btn"
                                     data-modal="modal-review2">Reageren</button>
                                 <div class="modal popup-modal" id="modal-review2">
@@ -462,8 +471,7 @@
                                                             class="user-image">
                                                     </div>
                                                     <div class="user-info-popup">
-                                                        <h2 class="blok-username-popup">Dit is een hele super lange
-                                                            username die een speler kan gaan gebruiken</h2>
+                                                        <h2 class="blok-username-popup">Dit is een hele lange username</h2>
                                                         <h2 class="blok-review-datum-popup">Geplaatst op: 27 februari 2025
                                                         </h2>
                                                     </div>
@@ -561,8 +569,10 @@
                         </div>
                         <div class="reviews-inhoud">
                             <div class="reviews-blok-top">
-                                <h2 class="blok-username">Dit is een hele super lange username die een speler kan gaan
-                                    gebruiken</h2>
+                                <div class="reviews-blok-top-begin">
+                                    <h2 class="blok-username">Dit is een hele lange username</h2>
+                                    <h2 class="blok-review-datum" data-datum="2025-02-16">Geplaatst op 16 februari</h2>
+                                </div>
                                 <h2 class="blok-score">7.5</h2>
                             </div>
                             <div class="blok-hele-review">
@@ -574,7 +584,6 @@
                                     aliqua.</h2>
                             </div>
                             <div class="blok-button-reageren">
-                                <h2 class="blok-review-datum" data-datum="2025-02-16">Geplaatst op 16 februari</h2>
                                 <button class="button-reageren open-modal-btn"
                                     data-modal="modal-review3">Reageren</button>
                                 <div class="modal popup-modal" id="modal-review3">
@@ -590,8 +599,7 @@
                                                             class="user-image">
                                                     </div>
                                                     <div class="user-info-popup">
-                                                        <h2 class="blok-username-popup">Dit is een hele super lange
-                                                            username die een speler kan gaan gebruiken</h2>
+                                                        <h2 class="blok-username-popup">Dit is een hele lange username</h2>
                                                         <h2 class="blok-review-datum-popup">Geplaatst op: 16 februari 2025
                                                         </h2>
                                                     </div>
@@ -696,8 +704,10 @@
                         </div>
                         <div class="reviews-inhoud">
                             <div class="reviews-blok-top">
-                                <h2 class="blok-username">Dit is een hele super lange username die een speler kan gaan
-                                    gebruiken</h2>
+                                <div class="reviews-blok-top-begin">
+                                    <h2 class="blok-username">Dit is een hele lange username</h2>
+                                    <h2 class="blok-review-datum" data-datum="2025-03-19">Geplaatst op 19 maart</h2>
+                                </div>
                                 <h2 class="blok-score">8.5</h2>
                             </div>
                             <div class="blok-hele-review">
@@ -709,7 +719,6 @@
                                     aliqua.</h2>
                             </div>
                             <div class="blok-button-reageren">
-                                <h2 class="blok-review-datum" data-datum="2025-03-19">Geplaatst op 19 maart</h2>
                                 <button class="button-reageren open-modal-btn"
                                     data-modal="modal-review4">Reageren</button>
                                 <div class="modal popup-modal" id="modal-review4">
@@ -725,8 +734,7 @@
                                                             class="user-image">
                                                     </div>
                                                     <div class="user-info-popup">
-                                                        <h2 class="blok-username-popup">Dit is een hele super lange
-                                                            username die een speler kan gaan gebruiken</h2>
+                                                        <h2 class="blok-username-popup">Dit is een hele lange username</h2>
                                                         <h2 class="blok-review-datum-popup">Geplaatst op: 19 maart 2025
                                                         </h2>
                                                     </div>
@@ -826,8 +834,10 @@
                         </div>
                         <div class="reviews-inhoud">
                             <div class="reviews-blok-top">
-                                <h2 class="blok-username">Dit is een hele super lange username die een speler kan gaan
-                                    gebruiken</h2>
+                                <div class="reviews-blok-top-begin">
+                                    <h2 class="blok-username">Dit is een hele lange username</h2>
+                                    <h2 class="blok-review-datum" data-datum="2025-03-13">Geplaatst op 13 maart</h2>
+                                </div>
                                 <h2 class="blok-score">8.5</h2>
                             </div>
                             <div class="blok-hele-review">
@@ -839,7 +849,6 @@
                                     aliqua.</h2>
                             </div>
                             <div class="blok-button-reageren">
-                                <h2 class="blok-review-datum" data-datum="2025-03-13">Geplaatst op 13 maart</h2>
                                 <button class="button-reageren open-modal-btn"
                                     data-modal="modal-review5">Reageren</button>
                                 <div class="modal popup-modal" id="modal-review5">
@@ -855,8 +864,8 @@
                                                             class="user-image">
                                                     </div>
                                                     <div class="user-info-popup">
-                                                        <h2 class="blok-username-popup">Dit is een hele super lange
-                                                            username die een speler kan gaan gebruiken</h2>
+                                                        <h2 class="blok-username-popup">Dit is een hele lange
+                                                            username</h2>
                                                         <h2 class="blok-review-datum-popup">Geplaatst op: 13 maart 2025
                                                         </h2>
                                                     </div>
@@ -1126,7 +1135,7 @@
 
     <footer>
         <div class="blok-footer">
-            <h2 class="footer">© Copyright 2016-2025 escapetalk.nl</h2>
+            <h2 class="footer">© Copyright 2025 escapetalk.nl</h2>
         </div>
     </footer>
 

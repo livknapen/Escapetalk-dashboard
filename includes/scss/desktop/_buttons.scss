@@ -30,8 +30,8 @@
 
 .button-reageren-popup {
   @include button-base;
-  margin: 15px 0 0 0;
-  width: 17%;
+  margin: 0;
+  width: 25%;
   padding: 8px 12px;
 }
 
@@ -42,7 +42,7 @@
   background-color: $third-color;
   margin: 0;
   position: absolute;
-  right: 7vw;
+  right: 5vw;
 }
 
 
