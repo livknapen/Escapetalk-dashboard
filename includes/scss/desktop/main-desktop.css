@@ -37,6 +37,7 @@ label {
   .header .header-tekst {
     font-size: 15px;
     font-weight: 300;
+    margin-right: 7vw;
   }
   .header .mobile-logo {
     display: flex;
@@ -987,6 +988,7 @@ label {
 .header .header-tekst {
   font-size: 15px;
   font-weight: 300;
+  margin-right: 7vw;
 }
 .header .mobile-logo {
   display: flex;
