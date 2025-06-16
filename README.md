@@ -1,72 +1,95 @@
-# Website Template
+# Dashboard escapetalk.nl
 
-This is a flat and responsive website template designed and coded by [Your Name or Company](Your Link). It's inspired by and built upon the [Portfolio One Page Template](Link to Portfolio Template).
+Dit is een platte en responsieve website ontworpen en gecodeerd door Liv Knapen. Op de "Kennis" pagina zie je het dashboard met de bijbehorende statistieken waarbij er ook statistieken zijn afgesloten omdat deze niet zichtbaar zijn voor een account die "Kennis" is. Aan de zijkant zie je een sidebar waar er naar andere pagina's gelinkt kan worden. Bovenin de header is er een hamburger menu waar je op kan klikken en hier voor de demo "Vriend" bij staat. Hier kan je op klikken waarna je naar de pagina gaat waar je "Vriend" bent en dus meer statistieken ziet die wel in dit account zichtbaar zijn. Bij de knop voor meer voordelen, krijg je een pop-up te zien waarbij de voordelen die je meer krijgt per abonnement weergegeven. Bij de reviews kan je reageren door op de knop te klikken, hierbij krijg je ook een pop-up met meer informatie over deze review en een tekst vak waar je kan reageren hierop. De statistiekn kan je filteren op week en maand.
 
-**Demo:** [Live Demo Link](Your Demo Link)
-
-![Mockup Demo](Link to Your Mockup Image)
+![alt text](../escapetalk-dashboard/includes/media/dashboard.jpg)
 
 ## Contents
 
 - [Folder and File Structure](#folder-and-file-structure)
 - [Requirements](#requirements)
 - [How to Start](#how-to-start)
-- [Site Configuration](#site-configuration)
-- [Tasks](#tasks)
-- [Live Reload](#live-reload)
 - [License](#license)
 
 ## Folder and File Structure
 
-
-[Include your project's folder and file structure here]
-
+.
+├── README.md
+├── includes
+│   ├── js
+│   │   ├── charts.js
+│   │   ├── menu.js
+│   │   └── popup.js
+│   ├── media
+│   │   ├── dashboard.jpg
+│   │   ├── locked-image.png
+│   │   ├── minus-circle.svg
+│   │   ├── mobile-logo.png
+│   │   ├── pim-peeking-bff.png
+│   │   ├── pim-peeking-kennis.png
+│   │   ├── pim-peeking-kennis.svg
+│   │   ├── pim-peeking-vriend.png
+│   │   ├── plus-circle.svg
+│   │   ├── unlock.png
+│   │   └── user.png
+│   └── scss
+│       ├── desktop
+│       │   ├── _buttons.scss
+│       │   ├── _cards.scss
+│       │   ├── _content.scss
+│       │   ├── _header.scss
+│       │   ├── _labels.scss
+│       │   ├── _media.scss
+│       │   ├── _modals.scss
+│       │   ├── _overlay.scss
+│       │   ├── _popup.scss
+│       │   ├── _sidebar.scss
+│       │   ├── main-desktop.css
+│       │   ├── main-desktop.css.map
+│       │   └── main-desktop.scss
+│       ├── mobile
+│       │   ├── _mobile-buttons.scss
+│       │   ├── _mobile-cards.scss
+│       │   ├── _mobile-content.scss
+│       │   ├── _mobile-header.scss
+│       │   ├── _mobile-labels.scss
+│       │   ├── _mobile-media.scss
+│       │   ├── _mobile-modals.scss
+│       │   ├── _mobile-overlay.scss
+│       │   ├── _mobile-popup.scss
+│       │   ├── _mobile-sidebar.scss
+│       │   ├── main-mobile.css
+│       │   ├── main-mobile.css.map
+│       │   └── main-mobile.scss
+│       ├── old-code
+│       │   ├── script.js
+│       │   ├── stylesheet-desktop.css
+│       │   ├── stylesheet-desktop.css.map
+│       │   ├── stylesheet-desktop.scss
+│       │   ├── stylesheet-mobile.css
+│       │   ├── stylesheet-mobile.css.map
+│       │   └── stylesheet-mobile.scss
+│       └── shared
+│           ├── _mixins.scss
+│           ├── _typography.scss
+│           └── _variables.scss
+├── index.html
+├── stylesheet.css
+├── stylesheet.css.map
+└── vriend.html
 
 ## Requirements
 
-- Node.js: [http://nodejs.org/](http://nodejs.org/)
-- Build system: [Grunt](http://gruntjs.com/) or [Gulp](http://gulpjs.com/)
-- Optionally, Editorconfig: [http://editorconfig.org/](http://editorconfig.org/)
-
-### Editorconfig
-
-This project includes an `.editorconfig` file to define the coding style standards. More details can be found [here](http://editorconfig.org/).
+- Visual studio code: https://code.visualstudio.com/
+- Live server: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
 ## How to Start
 
-Before starting, make sure you have npm and gulp installed globally.
+Open eerst de code op je lokale pc. Klik vervolgens op de liveserver en deze wordt geopend in je browser.
 
 **Steps to get started:**
-- Install dependencies: `npm install`.
-- Run tasks listed below.
-- Edit settings in `dev/data/config.json`. Refer to [Site Configuration](#site-configuration).
-
-## Site Configuration
-
-This template uses Pug templates with external JSON configurations. Settings are in `dev/data/config.json` and can be used in templates with `config.key-name`.
-
-## Tasks
-
-Below are groups of Gulp tasks along with their descriptions:
-
-### Cleanup
-- Description and commands for the cleanup tasks.
-
-### Dev
-- Details of the development tasks and commands.
-
-### Build
-- Build task descriptions and commands.
-
-### Rebuild
-- Rebuild task process and relevant commands.
-
-### Server
-- Instructions to run the server.
-
-## Live Reload
-
-This project employs BrowserSync for live reloading. 
+- Open de code.
+- Run de live server.
 
 ## License
-License here
+Copyright © 2025 Liv Knapen. All rights reserved.
